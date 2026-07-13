@@ -1,0 +1,13 @@
+figure,panel,conclusion,source_files,primary_metric,export_target,notes
+1,A,Public InSAR observability failure creates urban monitoring debt,02_benchmark_v0_1/benchmark_v0_1_report.md,observability_failure,concept diagram,Three-term definition only
+1,B,The paper is an urban problem, not a single basin artifact,02_benchmark_v0_1/benchmark_region_evidence_v0_1.csv,region coverage,region matrix,Use Po/Chao Phraya/Indus/Rhone/Brantas/Rhine
+1,C,The project boundary is benchmarkable,02_benchmark_v0_1/benchmark_dataset_inventory_v0_1.csv,dataset tiers,source-data map,Show primary/secondary/extension layers
+2,A,Strong subsidence dominates the lead case,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_fraction,VLM summary map,Use cell table for rendering
+2,B,Area-weighted accounting reveals hidden population and built-up land,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_cells.csv,strong_sub_5mm_not_majority_fraction,hidden fraction map,Map hidden strong-exposure cells
+2,C,Transport remains a sensitivity layer,03_exposure_closure/chao_phraya_osm_exposure_censoring/chao_phraya_osm_exposure_censoring_summary.csv,hidden_strong_subsidence_transport_fraction,stacked transport bars,Road + railway
+3,A,Visible-only exposure undercounts total urban exposure,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_population_not_majority_fraction,waterfall,Visible vs full exposure
+3,B,Undercount is materially different across region roles,08_nature_experiment_plan/nature_cities_headline_numbers_v1.md,region roles,regional comparison,Keep supporting/transfer/control split explicit
+3,C,Missed population and built-up are policy-relevant,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_builtup_not_majority_fraction,paired bars,Missed exposure under strong motion
+4,A,Censoring survives threshold changes,03_exposure_closure/chao_phraya_robustness_grid/chao_phraya_robustness_grid.csv,strong_vs_nonstrong_not_majority_odds_ratio,heatmap,Threshold x strong-threshold
+4,B,The pooled signal is stronger in the frozen anchor-aware synthesis than in summary-only pooling,03_exposure_closure/hierarchical_model_v1/hierarchical_model_comparison.csv,pooled_or,model-family comparison,Summary-only vs cell-anchored stack
+4,C,Transfer cases extend the question, but not every layer is equally closed,04_japan_licsbas_probe/h5_velocity_summary.json;05_iran_insar_probe/iran_insar_probe_report.md,velocity sign/unit,summary panels,Japan and Iran transfer probes

@@ -29,7 +29,7 @@ This audit compares the experiment plan in `08_nature_experiment_plan` and `expe
 ## Direct Evidence of Closed Items
 - `E0` and `E1` are materialized as standalone plan files.
 - `E9` is materialized as the Chao Phraya robustness grid CSV and report.
-- `E10` is materially complete: Fig. 1 through Fig. 7 are rendered in PDF/SVG/TIFF form and copied into the submission-ready package.
+- `E10` is materially complete: the four main figures are rendered in PDF/SVG/TIFF form and copied into the submission-ready package, with supporting figures retained separately.
 - `dataset_manifest.json` and `source_data_manifest_v1.csv` now exist as local reproducibility indexes.
 - `repository_release_candidate.md` now exists as the local handoff summary.
 - `module_tournament_contract_v1.md`, `module_tournament_ledger_v1.csv`, and `frozen_validation_split_v1.csv` now exist as the frozen module-tournament scaffold.
