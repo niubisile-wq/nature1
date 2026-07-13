@@ -36,7 +36,7 @@ The GitHub repository is the versioned source for the Zenodo release. The Zenodo
 
 ## Key files
 
-- `README_总说明.md`
+- Main repository summary and release notes
 - `08_nature_experiment_plan/`
 - `07_scripts_and_registry/`
 - `10_manuscript_skeleton/`
