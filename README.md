@@ -1,18 +1,19 @@
 # Nature project repository
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21339189.svg)](https://doi.org/10.5281/zenodo.21339189)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21341994.svg)](https://doi.org/10.5281/zenodo.21341994)
 
 This repository contains the code, documentation, manifests, and lightweight source data needed to reproduce the manuscript figures and validation package for the open-InSAR observability-bias study.
 
 ## Release and DOI
 
 - GitHub repository: `https://github.com/niubisile-wq/nature1`
-- Zenodo DOI: `10.5281/zenodo.21339189`
+- Zenodo v0.2.0 DOI: `10.5281/zenodo.21341994`
+- Zenodo concept DOI: `10.5281/zenodo.21339188`
 
 Recommended citation:
 
 ```text
-Liu, Z. et al. Open InSAR observability-bias manuscript repository. Zenodo. https://doi.org/10.5281/zenodo.21339189
+Liu, Z. et al. Open InSAR observability-bias manuscript repository. Zenodo. https://doi.org/10.5281/zenodo.21341994
 ```
 
 ## What is included
