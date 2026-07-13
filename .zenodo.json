@@ -1,0 +1,14 @@
+{
+  "title": "Open InSAR observability-bias manuscript repository",
+  "upload_type": "software",
+  "description": "Code, documentation, manifests, and lightweight source data for the open-InSAR observability-bias manuscript repository.",
+  "creators": [
+    {
+      "name": "Liu, Zixuan"
+    }
+  ],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "version": "0.1.0",
+  "publication_date": "2026-07-13"
+}

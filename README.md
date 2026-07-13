@@ -1,5 +1,7 @@
 # Nature project repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21339189.svg)](https://doi.org/10.5281/zenodo.21339189)
+
 This repository contains the code, documentation, manifests, and lightweight source data needed to reproduce the manuscript figures and validation package for the open-InSAR observability-bias study.
 
 ## Release and DOI
