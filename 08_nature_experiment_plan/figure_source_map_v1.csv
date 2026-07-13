@@ -1,0 +1,26 @@
+figure,panel,conclusion,source_files,primary_metric,export_target,notes
+1,A,Open InSAR observability is structured censoring,02_benchmark_v0_1/benchmark_v0_1_report.md,observability_failure,concept diagram,Three-term definition only
+1,B,The benchmark spans multiple regions,02_benchmark_v0_1/benchmark_region_evidence_v0_1.csv,region coverage,region matrix,Use Po/Chao Phraya/Indus/Rhone/Brantas/Rhine
+1,C,The project boundary is benchmarkable,02_benchmark_v0_1/benchmark_dataset_inventory_v0_1.csv,dataset tiers,source-data map,Show primary/secondary/extension layers
+2,A,Strong subsidence dominates the lead case,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_fraction,VLM summary map,Use cell table for rendering
+2,B,Observability censoring is measurable,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_cells.csv,strong_sub_5mm_not_majority_fraction,hidden fraction map,Map hidden strong-exposure cells
+2,C,Hidden exposure is large in people and built-up area,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_population_not_majority_fraction,paired bars,Use population and built-up in one panel set
+2,D,Transport exposure is also hidden,03_exposure_closure/chao_phraya_osm_exposure_censoring/chao_phraya_osm_exposure_censoring_summary.csv,hidden_strong_subsidence_transport_fraction,stacked transport bars,Road + railway
+3,A,Censoring survives threshold changes,03_exposure_closure/chao_phraya_robustness_grid/chao_phraya_robustness_grid.csv,strong_vs_nonstrong_not_majority_odds_ratio,heatmap,Threshold x strong-threshold
+3,B,Censoring survives block bootstrap,03_exposure_closure/chao_phraya_robustness_grid/chao_phraya_robustness_grid.csv,strong_vs_nonstrong_not_majority_odds_ratio_q025,interval plot,Use 5/10/20 block sizes
+3,C,Moderate and strong motion both carry signal,03_exposure_closure/chao_phraya_robustness_grid/chao_phraya_robustness_grid.csv,strong_not_majority_fraction,line plot,Facet by observability threshold
+4,A,Visible-only exposure undercounts strong-motion exposure,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_population_not_majority_fraction,waterfall,Visible vs full exposure
+4,B,Underestimation factor is non-trivial across regions,02_benchmark_v0_1/benchmark_region_evidence_v0_1.csv,bias_or_minus_one_proxy,regional bar chart,Use regional comparison
+4,C,Missed population and built-up are policy-relevant,03_exposure_closure/chao_phraya_area_weighted_exposure_censoring/chao_phraya_area_weighted_exposure_summary.csv,strong_sub_5mm_builtup_not_majority_fraction,paired bars,Missed exposure under strong motion
+4,D,Transport is a separate layer,03_exposure_closure/chao_phraya_osm_exposure_censoring/chao_phraya_osm_exposure_censoring_summary.csv,hidden_strong_subsidence_transport_fraction,transport bar chart,Road and rail
+5,A,The benchmark is not a land-cover artifact,02_benchmark_v0_1/benchmark_region_evidence_v0_1.csv,dominant_landcover_fraction,scatter or bar,Land-cover-stratified control
+5,B,The signal is product-lineage aware,01_innovation_reports/创新点落地进度_2026-07-09.md,observability debt,schematic,Use as a labeled mechanism panel
+5,C,Japan Niigata extends the product family,04_japan_licsbas_probe/h5_velocity_summary.json,median velocity,small summary panel,Non-Europe public product
+5,D,Iran extends the product family,05_iran_insar_probe/iran_insar_probe_report.md,valid rate pixels,small summary panel,Nationwide public product
+6,A,Japan transfer summary,04_japan_licsbas_probe/h5_velocity_summary.json,velocity sign/unit,summary map,Transfer and scope
+6,B,Iran transfer summary,05_iran_insar_probe/iran_insar_probe_report.md,rate sign/unit,summary map,Transfer and scope
+6,C,GNSS anchors are sparse but adequate,02_benchmark_v0_1/benchmark_region_evidence_v0_1.csv,ngl_station_count,anchor availability matrix,Independent support
+6,D,Europe upgrade path remains open,06_egms_query_pack/EGMS_API突围查询包_2026-07-09.md,query pack readiness,schematic,No-credential upgrade path
+7,A,Frozen hierarchical model comparison is auditable,03_exposure_closure/hierarchical_model_v1/hierarchical_model_comparison.csv,pooled_or,model-family comparison,Summary-only vs cell-anchored stack
+7,B,Leave-one-out stability remains bounded,03_exposure_closure/hierarchical_model_v1/hierarchical_model_leave_one_out.csv,abs_log_error,stability bar plot,Region-wise error bars
+7,C,Hierarchical coefficients preserve the anchor signal,03_exposure_closure/hierarchical_model_v1/hierarchical_model_coefficients.csv,or,forest plot,Filtered coefficient structure

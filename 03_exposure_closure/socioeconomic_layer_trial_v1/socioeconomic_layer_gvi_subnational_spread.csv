@@ -1,0 +1,7 @@
+region,country_or_area,country_iso,source,year,national_value,subnational_count,subnational_min,subnational_median,subnational_max,spread_note
+Po,Italy,ITA,GVI,2013,25.2,20,20.9,26.9,33.1,retrieved_from_public_table
+Chao Phraya,Thailand,THA,GVI,2013,32.3,4,31.0,34.9,35.4,retrieved_from_public_table
+Brantas,Indonesia,IDN,GVI,2013,39.5,28,30.1,41.4,56.1,retrieved_from_public_table
+Indus,Pakistan_or_India_basin_context,IND,GVI,2013,48.3,35,34.4,45.1,60.9,retrieved_from_public_table
+Rhone,France,FRA,GVI,2013,23.6,26,15.5,28.1,35.2,retrieved_from_public_table
+Rhine,Multi_country_basin_context,,GVI,,,,,,,multi_country_context_unresolved

@@ -1,0 +1,25 @@
+{
+  "artifact": "hierarchical_anchor_closure_v1",
+  "chao_cell_level": {
+    "beta": 1.794986971191339,
+    "std_error": 0.1427212225839932,
+    "odds_ratio": 6.0193962957337614,
+    "odds_ratio_ci_low": 4.55057398213639,
+    "odds_ratio_ci_high": 7.962321216472721,
+    "boot_mean": 6.216595240664828,
+    "boot_q025": 3.599523724499755,
+    "boot_q50": 5.79877822541095,
+    "boot_q975": 10.443069268609948,
+    "loo_max_abs_deviation": 0.10321684232468456
+  },
+  "benchmark_summary_only_random_or": 1.770236788348802,
+  "hybrid_cell_anchored_random_or": 1.9646318688752513,
+  "blocked_equal_area_proxy_random_or": 1.770236788348802,
+  "files": [
+    "hierarchical_anchor_region_table.csv",
+    "hierarchical_anchor_meta_regression.csv",
+    "hierarchical_anchor_leave_one_out.csv",
+    "hierarchical_anchor_sensitivity.csv",
+    "hierarchical_anchor_report.md"
+  ]
+}

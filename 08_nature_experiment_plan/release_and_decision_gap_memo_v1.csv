@@ -1,0 +1,5 @@
+gap,current_state,nature_target,next_action
+decision_facing_main_table,separate exposure/infrastructure/transfer pieces,one main Results table with population+built_up+infrastructure+transfer status,use decision_facing_exposure_matrix_v1 as the main table candidate
+explicit_release_statement,DOI-ready but not minted,public DOI and versioned repository text,keep the finalizer ready and avoid hardcoding a fake DOI
+full_all_region_fit,closure-by-compilation package exists,true all-region cell-level fit or transparent limitation,label closure-by-compilation explicitly and do not overclaim
+infrastructure_translation,lead-case transport explicit only,lead-case infrastructure anchor with honest non-lead limitations,keep roads/rail as the infrastructure anchor

@@ -1,0 +1,5 @@
+item,current_state,nature_like_target,next_action
+Socioeconomic vulnerability layer,"not present in current local stack","add a harmonized socioeconomic deprivation / HDI / wealth / inequality companion layer","identify a clean open source and decide raster vs region-level context"
+Spatial harmonization,"no current socioeconomic raster or harmonized table","match the layer across lead / benchmark / control regions","prefer matched open source; otherwise label as coarse context only"
+Manuscript integration,"exposure story is complete on population/built-up/infrastructure","add vulnerability companion to decision-facing matrix","only include if the harmonization is defensible in review"
+

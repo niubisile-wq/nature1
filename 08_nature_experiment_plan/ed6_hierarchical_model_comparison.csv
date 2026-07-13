@@ -1,0 +1,3 @@
+model_family,pooled_or,pooled_ci_low,pooled_ci_high,loo_mae,loo_max_abs_error,notes
+summary_only_meta,1.770236788348802,1.2118630603494314,2.5858848159955397,nan,nan,Frozen region-level random-effects benchmark.
+hierarchical_anchor_stack,1.9646318688752513,1.120580669991814,3.444383792032186,0.6111012395033385,1.09409416839492,Cell-anchored hybrid synthesis with region-level covariates.

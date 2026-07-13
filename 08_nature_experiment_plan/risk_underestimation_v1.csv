@@ -1,0 +1,7 @@
+region,signal,landcover,underestimation_proxy,confidence_note,nature_readiness
+Po,positive,cropland,0.328935,"Land-cover-adjusted OR > 1 and sparse GNSS anchor",conditional_nature_go_after_egms
+Chao Phraya,strong_positive,cropland,2.561870,"Strong positive signal with large missed exposure",benchmark_v0_landed_needs_dense_truth
+Indus,strong_positive,water_wetland_mangrove,2.389400,"Strong positive signal with weak independent anchor",statistical_signal_needs_independent_anchor
+Rhone,positive,vegetation_non_crop,0.591777,"Positive control with sparse GNSS anchor",conditional_nature_go_after_egms
+Brantas,positive,built_up,0.591713,"Weak-anchor sensitivity case",statistical_signal_needs_independent_anchor
+Rhine,inconclusive,vegetation_non_crop,-0.189851,"Control/specification case",control_or_specification_case

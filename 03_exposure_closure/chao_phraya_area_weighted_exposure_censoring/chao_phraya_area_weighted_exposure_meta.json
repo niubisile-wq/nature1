@@ -1,0 +1,258 @@
+{
+  "vlm_tif": "C:\\Users\\刘子轩\\radar_outputs\\delta_binomial_with_worldcover_main\\chao_phraya\\gridVLM\\chaoPhraya_vlm.tif",
+  "population_tif": "C:\\Users\\刘子轩\\radar_outputs\\central_valley_ghsl_population_censoring\\GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif",
+  "builtup_tif": "C:\\Users\\刘子轩\\radar_outputs\\central_valley_ghsl_builtup_censoring\\GHS_BUILT_S_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif",
+  "downloads_csv": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\frame_ghsl_exposure_downloads.csv",
+  "download_rows": 28,
+  "threshold": 0.3,
+  "vlm_scale_to_mm": 10.0,
+  "bbox": {
+    "lon_min": 99.75708294059999,
+    "lon_max": 101.4570829338,
+    "lat_min": 13.291250135234627,
+    "lat_max": 15.316250127094754
+  },
+  "pad_deg": 0.01666666660000009,
+  "vlm_info": {
+    "width": 204,
+    "height": 243,
+    "tie_lon": 99.75708294059999,
+    "tie_lat": 15.316250127094754,
+    "pixel_size_x": 0.008333333300000046,
+    "pixel_size_y": 0.008333333299835917,
+    "lon_min": 99.75708294059999,
+    "lon_max": 101.4570829338,
+    "lat_max": 15.316250127094754,
+    "lat_min": 13.291250135234627,
+    "nodata": NaN,
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\delta_binomial_with_worldcover_main\\chao_phraya\\gridVLM\\chaoPhraya_vlm.tif"
+  },
+  "pair_rows": [
+    {
+      "pair": "20160120_20160320",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20160120_20160320.geo.cc.tif",
+      "observable_cells": 33171,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20160507_20160519",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20160507_20160519.geo.cc.tif",
+      "observable_cells": 35791,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20160823_20160928",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20160823_20160928.geo.cc.tif",
+      "observable_cells": 35700,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20161127_20161221",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20161127_20161221.geo.cc.tif",
+      "observable_cells": 35691,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20170126_20170327",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20170126_20170327.geo.cc.tif",
+      "observable_cells": 35687,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20170514_20170830",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20170514_20170830.geo.cc.tif",
+      "observable_cells": 35691,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20170911_20171017",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20170911_20171017.geo.cc.tif",
+      "observable_cells": 35726,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20171204_20171216",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20171204_20171216.geo.cc.tif",
+      "observable_cells": 35738,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20180202_20180214",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20180202_20180214.geo.cc.tif",
+      "observable_cells": 35760,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20180608_20190311",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20180608_20190311.geo.cc.tif",
+      "observable_cells": 35741,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20180912_20190329",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20180912_20190329.geo.cc.tif",
+      "observable_cells": 35714,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20181217_20190110",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20181217_20190110.geo.cc.tif",
+      "observable_cells": 35762,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20190122_20190203",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20190122_20190203.geo.cc.tif",
+      "observable_cells": 35767,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20190428_20190510",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20190428_20190510.geo.cc.tif",
+      "observable_cells": 35775,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20190901_20190907",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20190901_20190907.geo.cc.tif",
+      "observable_cells": 35784,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20191124_20191224",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20191124_20191224.geo.cc.tif",
+      "observable_cells": 35748,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20200105_20200111",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20200105_20200111.geo.cc.tif",
+      "observable_cells": 35784,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20200329_20200919",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20200329_20200919.geo.cc.tif",
+      "observable_cells": 35713,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20200907_20200919",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20200907_20200919.geo.cc.tif",
+      "observable_cells": 35761,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20201212_20201218",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20201212_20201218.geo.cc.tif",
+      "observable_cells": 35773,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20210111_20210129",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20210111_20210129.geo.cc.tif",
+      "observable_cells": 35780,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20210405_20210429",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20210405_20210429.geo.cc.tif",
+      "observable_cells": 35757,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20210902_20220325",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20210902_20220325.geo.cc.tif",
+      "observable_cells": 35719,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20211213_20211231",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20211213_20211231.geo.cc.tif",
+      "observable_cells": 35776,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20220205_20220406",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20220205_20220406.geo.cc.tif",
+      "observable_cells": 35756,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20220325_20220909",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20220325_20220909.geo.cc.tif",
+      "observable_cells": 35732,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20220711_20220828",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20220711_20220828.geo.cc.tif",
+      "observable_cells": 35746,
+      "inside_cells": 43248
+    },
+    {
+      "pair": "20221003_20221027",
+      "local_path": "C:\\Users\\刘子轩\\radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\downloads\\20221003_20221027.geo.cc.tif",
+      "observable_cells": 35738,
+      "inside_cells": 43248
+    }
+  ],
+  "summary": {
+    "frame_id": "062D_07629_131313",
+    "coherence_threshold": 0.3,
+    "n_pairs": 28,
+    "valid_vlm_cells": 18077,
+    "covered_vlm_cells": 18077,
+    "strong_sub_5mm_cells": 17808,
+    "strong_sub_5mm_fraction": 0.9851192122586713,
+    "strong_sub_5mm_mean_vlm_mm_yr": -10.600826401120502,
+    "strong_sub_5mm_mean_observability": 0.9979363207547169,
+    "strong_sub_5mm_never_observable_fraction": 0.0,
+    "strong_sub_5mm_not_majority_fraction": 0.0,
+    "strong_sub_5mm_not_stable75_fraction": 0.00011230907457322552,
+    "strong_sub_5mm_obs_lt_0p25_fraction": 0.0,
+    "strong_vs_nonstrong_not_majority_odds_ratio": 0.01513322289917736,
+    "total_population_vlm_grid": 22499201.138261523,
+    "strong_sub_5mm_population": 20644645.92674763,
+    "strong_sub_5mm_population_fraction": 0.9175723973434734,
+    "strong_sub_5mm_population_never_observable": 0.0,
+    "strong_sub_5mm_population_not_majority": 0.0,
+    "strong_sub_5mm_population_not_stable75": 1529.9112592786505,
+    "strong_sub_5mm_population_never_observable_fraction": 0.0,
+    "strong_sub_5mm_population_not_majority_fraction": 0.0,
+    "strong_sub_5mm_population_not_stable75_fraction": 7.410692654682277e-05,
+    "total_builtup_km2_vlm_grid": 1253.6228578288358,
+    "strong_sub_5mm_builtup_km2": 1200.2231319405846,
+    "strong_sub_5mm_builtup_fraction": 0.9574036756311746,
+    "strong_sub_5mm_builtup_never_observable_km2": 0.0,
+    "strong_sub_5mm_builtup_not_majority_km2": 0.0,
+    "strong_sub_5mm_builtup_not_stable75_km2": 0.17529474074086285,
+    "strong_sub_5mm_builtup_never_observable_fraction": 0.0,
+    "strong_sub_5mm_builtup_not_majority_fraction": 0.0,
+    "strong_sub_5mm_builtup_not_stable75_fraction": 0.0001460517932673377,
+    "population_any_observable": 22499201.138261523,
+    "population_majority_observable": 22499201.138261523,
+    "population_not_majority_observable": 0.0,
+    "population_never_observable": 0.0,
+    "population_obs_lt_0p25": 0.0,
+    "population_any_observable_fraction": 1.0,
+    "population_majority_observable_fraction": 1.0,
+    "population_not_majority_observable_fraction": 0.0,
+    "population_never_observable_fraction": 0.0,
+    "population_obs_lt_0p25_fraction": 0.0,
+    "builtup_any_observable_km2": 1253.6228578288358,
+    "builtup_majority_observable_km2": 1253.6228578288358,
+    "builtup_not_majority_observable_km2": 0.0,
+    "builtup_never_observable_km2": 0.0,
+    "builtup_obs_lt_0p25_km2": 0.0,
+    "builtup_any_observable_fraction": 1.0,
+    "builtup_majority_observable_fraction": 1.0,
+    "builtup_not_majority_observable_fraction": 0.0,
+    "builtup_never_observable_fraction": 0.0,
+    "builtup_obs_lt_0p25_fraction": 0.0,
+    "population_weighted_mean_observability": 0.9993335536877114,
+    "builtup_weighted_mean_observability": 0.9985624939997975,
+    "mean_pop_cover_fraction": 1.0000000000003448,
+    "mean_built_cover_fraction": 1.0000000000003448
+  }
+}

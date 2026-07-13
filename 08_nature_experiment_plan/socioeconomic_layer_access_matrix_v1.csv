@@ -1,0 +1,5 @@
+candidate,official_source,public_access_signal,practical_access_mode,trial_role
+GRDI v1,"NASA Earthdata / SEDAC","public catalog page with DOI/docs/Earthdata Search/URS links","Earthdata Search / authenticated download path","preferred raster upgrade, access-gated"
+SHDI v10.2,"Global Data Lab","public table and download routes visible","direct public table/download path","immediate regional fallback"
+Nightlights,"World Bank / harmonized products","widely public proxy datasets","proxy download/API","last-resort fallback only"
+

@@ -1,0 +1,5 @@
+phase,action,success_criterion,fallback
+Raster harmonization,"stage GRDI, reproject to equal-area grid, compute region and lead-case summaries","GRDI can be compared directly to current exposure layers","fall back to SHDI if raster alignment is weak"
+Defensive fallback,"build SHDI region-level companion table","SHDI is defensible as contextual vulnerability evidence","use nightlights only if SHDI is unavailable or too coarse"
+Manuscript integration,"add layer only if it improves the decision-facing matrix","layer is reproducible and honestly labeled","keep the gap explicit"
+

@@ -1,0 +1,128 @@
+[
+  {
+    "zip": "C:\\Users\\刘子轩\\radar_outputs\\japan_licsbas_selected_probe\\151_Niigata_039A_05193_040711_TS_GEOCml1.zip",
+    "n_members": 1733,
+    "n_files": 1715,
+    "suffix_counts": {
+      ".png": 1662,
+      ".txt": 21,
+      "[no_suffix]": 16,
+      ".h5": 2,
+      ".kml": 2,
+      ".dem_par": 1,
+      ".par": 1,
+      ".tif": 1,
+      ".mli": 1,
+      ".filt": 2,
+      ".mskd": 3,
+      ".geo": 3
+    },
+    "top_dirs": {
+      "151_Niigata_039A_05193_040711_TS_GEOCml1": 1733
+    },
+    "largest_files": [
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/cum_filt.h5",
+        "size": 30702278,
+        "compressed_size": 14313182
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/cum.h5",
+        "size": 30700658,
+        "compressed_size": 14245786
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network11.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network11_all.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network11_nobad.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network12.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network12_all.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network12_nobad.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network13.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network13_all.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/network/network13_nobad.png",
+        "size": 349112,
+        "compressed_size": 340855
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/12loop/loop_ph_rms_masked",
+        "size": 218420,
+        "compressed_size": 59210
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/info/13rms_cum_wrt_med",
+        "size": 218420,
+        "compressed_size": 120780
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/info/16rms_cum_wrt_med",
+        "size": 218420,
+        "compressed_size": 104378
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/results/coh_avg",
+        "size": 218420,
+        "compressed_size": 188202
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/results/hgt",
+        "size": 218420,
+        "compressed_size": 127725
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/results/mask",
+        "size": 218420,
+        "compressed_size": 4441
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/results/maxTlen",
+        "size": 218420,
+        "compressed_size": 3238
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/results/n_gap",
+        "size": 218420,
+        "compressed_size": 2695
+      },
+      {
+        "filename": "151_Niigata_039A_05193_040711_TS_GEOCml1/results/n_ifg_noloop",
+        "size": 218420,
+        "compressed_size": 10152
+      }
+    ],
+    "has_geotiff": true,
+    "has_text_metadata": true
+  }
+]

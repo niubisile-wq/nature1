@@ -1,0 +1,12 @@
+layer,status,key_metric,key_value,reviewer_meaning,remaining_gap
+observability_masks,partial,Chao_Phraya_not_majority_observable,0.706929,Hidden exposure is reproducible in the lead case,Final polygon/equal-area export package missing
+observability_masks,partial,Po_not_majority_observable,0.827620,The same pattern appears in the screening set,Final polygon/equal-area export package missing
+observability_masks,partial,Brantas_not_majority_observable,0.466196,Lead/screening pattern is not unique to Chao Phraya,Final polygon/equal-area export package missing
+sign_unit_audit,complete,unit,mm_per_year,Prevents sign drift and overclaiming,External benchmark closure pending
+blocked_equal_area,frozen,pooled_OR,1.7702,Multi-region signal survives blocked synthesis,Full cell-level equal-area benchmark missing
+blocked_equal_area,frozen,I2,0.881,The region-level signal is heterogeneous but still pooled,Full cell-level equal-area benchmark missing
+stratified_control,frozen,landcover_size_stack_OR,1.7903,Signal survives richer controls,Final manuscript integration pending
+stratified_control,frozen,landcover_size_stack_LOO_MAE,0.2036,This is the most stable frozen control family,Final manuscript integration pending
+hierarchical_comparison,frozen,hierarchical_anchor_stack_OR,1.9646,Model choice is now auditable,Full all-region cell-level hierarchical fit missing
+transfer_validation,frozen,japan_and_iran_status,supported_lineage_extensions,Scope extension is supported without claiming independent truth,EGMS/CLMS closure pending
+risk_translation,partial,chao_phraya_OR,3.56187,Exposure translation remains strong in the lead case,Cross-region inferential polish still needed

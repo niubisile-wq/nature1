@@ -1,0 +1,14 @@
+dataset_id,domain,role,access_route,primary_use,version_or_record,limitations
+licsar_ceda,radar_insar,Open Sentinel-1 derived interferograms and coherence,public archive,Main no-token InSAR product inventory and downloadable products,CEDA LiCSAR products listing,coverage is frame-based and non-uniform
+ghsl,exposure,Global population and built-up layers,public repository / download page,Exposure and settlement-weighted risk estimation,GHSL R2023A built-up and population products,requires exact product/version selection and equal-area overlay
+worldcover,landcover,ESA global land cover map,public S3 / download,Land-cover controls and censoring mechanism,ESA WorldCover 10 m v200 2021,land-cover classes must be grouped and resampled consistently
+ngl_midas_gnss,gnss,Global GNSS station velocities,public text products,Sparse independent vertical-motion anchors,NGL MIDAS IGS14 text,station density sparse; not pixel truth
+japan_licsbas_zenodo,radar_insar,Japan nationwide urban deformation data,public Zenodo record,Non-US deformation-product extension and transfer test,Zenodo 4243151,derived from LiCSAR/LiCSBAS; not independent truth
+iran_nationwide_insar_zenodo,radar_insar,Iran nationwide InSAR deformation rasters,public Zenodo record,No-token arid-groundwater benchmark extension,Zenodo 10815578,processed InSAR; sign/unit audit required
+coastal_city_subsidence_db_zenodo,subsidence_catalog,Database of subsidence in 143 major coastal cities,public Zenodo record,Context and city-selection prior,Zenodo 13692617,literature database only
+osm_geofabrik,infrastructure,OpenStreetMap roads/rail/infrastructure,public extract downloads,Infrastructure exposure overlay and missed-risk translation,Geofabrik extracts,ODbL attribution and derived-db obligations
+fao_gmia,irrigation,Global irrigation maps,public FAO geospatial downloads,Groundwater/irrigation exposure proxy,FAO latest irrigation maps,coarse resolution
+ghsl_built_s_r2023a,exposure,Global built-up surface grids,public GHSL download,Area-weighted built-up exposure,GHSL built-up surface R2023A,needs equal-area handling and exact epoch
+ms_global_buildings,exposure,Global AI-derived building footprints,public GitHub / release data,Building footprint exposure alternative,Microsoft globalmlbuildingfootprints,large vectors and variable imagery dates
+google_open_buildings_temporal,exposure,Building presence counts and height,public GEE / cloud dataset,Building exposure and density proxy,Google Open Buildings Temporal v1,coverage varies by region
+egms_query_pack,radar_insar,Prepared EGMS query payloads,local scaffold for token-based access,Future EGMS upgrade path,EGMS rescue pack v0.1,requires CLMS token before actual data access

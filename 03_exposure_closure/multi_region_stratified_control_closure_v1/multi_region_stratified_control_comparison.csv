@@ -1,0 +1,6 @@
+family,reference_or,reference_ci_low,reference_ci_high,loo_mae,loo_max_abs_error,n_terms,notes
+landcover_size_stack,1.790343904448103,1.5330094865399293,2.090875056115311,0.20359384964418217,0.3812339183639646,9,Frozen control-family comparison with standardized predictors and leave-one-out refits.
+full_stratified_control_stack,1.7903438983680846,1.533009194388587,2.090875440380003,0.3335677486143161,0.6013620679085315,16,Frozen control-family comparison with standardized predictors and leave-one-out refits.
+exposure_composition_stack,1.7903431958637037,1.5330086678794979,2.0908745176302,0.4609112908106681,0.9400070907340972,7,Frozen control-family comparison with standardized predictors and leave-one-out refits.
+hidden_stratified_stack,1.7903459721941366,1.533011422881345,2.0908772448200224,0.5479577891391061,1.3278372458272367,7,Frozen control-family comparison with standardized predictors and leave-one-out refits.
+summary_only_meta,1.770236788348802,1.2118630603494314,2.5858848159955397,nan,nan,0,Frozen random-effects benchmark with no additional covariates.

@@ -1,0 +1,14 @@
+{
+  "artifact": "hierarchical_model_v1",
+  "files": [
+    "hierarchical_model_coefficients.csv",
+    "hierarchical_model_leave_one_out.csv",
+    "hierarchical_model_comparison.csv",
+    "hierarchical_model_report.md"
+  ],
+  "pooled_or": 1.770236788348802,
+  "pooled_ci_low": 1.2118630603494314,
+  "pooled_ci_high": 2.5858848159955397,
+  "hierarchical_stack_loo_mae": 0.6111012395033385,
+  "hierarchical_stack_loo_max_abs_error": 1.09409416839492
+}

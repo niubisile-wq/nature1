@@ -1,0 +1,7 @@
+region,infrastructure_layer,key_infrastructure_metric,interpretation
+Chao_Phraya,available,"transport_hidden_fraction_mean=0.534; median=0.531; min=0.303; max=0.699; major_roads=17457; railways=1353","Lead case now has a measurable transport infrastructure layer, and more than half of the transport exposure is hidden on average by observability censoring."
+Po,not_yet_translated,"infrastructure_proxy_missing","Signal is present in population and built-up area, but the transport layer has not yet been built with the same rigor."
+Brantas,not_yet_translated,"infrastructure_proxy_missing","Built-up and population exposure exist, but a transport-risk layer is still missing."
+Indus,not_yet_translated,"infrastructure_proxy_missing","Statistical signal exists, but the infrastructure layer is still incomplete."
+Rhone,not_yet_translated,"infrastructure_proxy_missing","Candidate upgrade case only."
+Rhine,not_yet_translated,"infrastructure_proxy_missing","Control/specification case."

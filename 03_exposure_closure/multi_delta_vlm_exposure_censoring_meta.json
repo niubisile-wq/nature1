@@ -1,0 +1,53 @@
+{
+  "zip": {
+    "url": "https://zenodo.org/api/records/15015923/files/gridVLM.zip/content",
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\multi_delta_vlm_exposure_censoring_rerun_20260709\\gridVLM.zip",
+    "bytes": 3711628,
+    "status": "cached",
+    "expected_md5": "053822783e6ed17b33c0b52a41fcbe02",
+    "actual_md5": "053822783e6ed17b33c0b52a41fcbe02",
+    "md5_match": true
+  },
+  "threshold": 0.3,
+  "deltas": [
+    {
+      "delta": "Po",
+      "frame_id": "117A_04454_131312",
+      "vlm_path": "C:\\Users\\刘子轩\\radar_outputs\\multi_delta_vlm_exposure_censoring_rerun_20260709\\po\\gridVLM\\po_vlm.tif",
+      "downloads_csv": "radar_outputs\\po_venice_lisc_ghsl_exposure_observability\\frame_ghsl_exposure_downloads.csv",
+      "n_pairs": 36,
+      "bbox": {
+        "lon_min": 11.96541661836498,
+        "lon_max": 12.573749949270844,
+        "lat_min": 44.59958332508126,
+        "lat_max": 45.28291665569486
+      }
+    },
+    {
+      "delta": "Chao Phraya",
+      "frame_id": "062D_07629_131313",
+      "vlm_path": "C:\\Users\\刘子轩\\radar_outputs\\multi_delta_vlm_exposure_censoring_rerun_20260709\\chao_phraya\\gridVLM\\chaoPhraya_vlm.tif",
+      "downloads_csv": "radar_outputs\\chao_phraya_lisc_ghsl_exposure_observability\\frame_ghsl_exposure_downloads.csv",
+      "n_pairs": 28,
+      "bbox": {
+        "lon_min": 99.75708294059999,
+        "lon_max": 101.4570829338,
+        "lat_min": 13.291250135234627,
+        "lat_max": 15.316250127094754
+      }
+    },
+    {
+      "delta": "Brantas",
+      "frame_id": "003D_09757_111111",
+      "vlm_path": "C:\\Users\\刘子轩\\radar_outputs\\multi_delta_vlm_exposure_censoring_rerun_20260709\\brantas\\gridVLM\\brantas_vlm.tif",
+      "downloads_csv": "radar_outputs\\brantas_lisc_ghsl_exposure_observability\\frame_ghsl_exposure_downloads.csv",
+      "n_pairs": 29,
+      "bbox": {
+        "lon_min": 112.53208289375188,
+        "lon_max": 112.89041622565188,
+        "lat_min": -7.6087497622365525,
+        "lat_max": -7.183749763936554
+      }
+    }
+  ]
+}

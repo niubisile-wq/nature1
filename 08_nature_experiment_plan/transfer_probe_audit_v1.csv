@@ -1,0 +1,4 @@
+probe,source,token_required,independent_truth,allowed_claim,validation_status,notes
+Japan Niigata,04_japan_licsbas_probe/japan_licsbas_selected_probe_report.md,0,0,product-lineage extension,supported,Selective ingest of Niigata sample confirms a non-Europe public deformation-product extension
+Iran nationwide InSAR,05_iran_insar_probe/iran_insar_zenodo_probe_report.md,0,0,product-lineage extension,supported,No-token processed nationwide InSAR extension
+EGMS rescue query pack,06_egms_query_pack/prepare_egms_rescue_queries.py,1,0,external benchmark closure,token-gated,No closure without CLMS token

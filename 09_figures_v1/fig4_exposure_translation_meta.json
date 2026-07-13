@@ -1,0 +1,7 @@
+{
+  "benchmark": "C:\\Users\\刘子轩\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_region_evidence_v0_1.csv",
+  "area_summary": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_area_weighted_exposure_censoring\\chao_phraya_area_weighted_exposure_summary.csv",
+  "osm_summary": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_osm_exposure_censoring\\chao_phraya_osm_exposure_censoring_summary.csv",
+  "output_dir": "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1",
+  "regions": 6
+}

@@ -1,0 +1,9 @@
+region,role,landcover,landcover_adjusted_or,landcover_adjusted_boot_q025,landcover_adjusted_boot_q975,observability_bias_signal,bias_or_minus_one_proxy,dominant_landcover,dominant_landcover_fraction,cropland_fraction,built_up_fraction,water_wetland_mangrove_fraction,max_failure_landcover,max_failure_rate,transfer_extension_note
+Po,lead benchmark,cropland,1.32894,1.12900,1.55664,positive,0.328935,cropland,0.634590,0.634590,0.027938,0.186253,water_wetland_mangrove,0.783069,"Sparse GNSS anchor, positive land-cover-adjusted signal"
+Chao Phraya,lead benchmark,cropland,3.56187,2.25134,5.78079,strong_positive,2.561870,cropland,0.401449,0.401449,0.190463,0.080932,cropland,0.878920,"Strong positive signal, lead Nature/NC case"
+Indus,external benchmark,water_wetland_mangrove,3.38940,2.32898,4.86955,strong_positive,2.389400,water_wetland_mangrove,0.507408,0.217864,0.006067,0.507408,cropland,0.817663,"Strong positive signal, weak GNSS anchor"
+Rhone,external control,vegetation_non_crop,1.59178,1.23975,2.07457,positive,0.591777,vegetation_non_crop,0.374410,0.210790,0.053066,0.334021,water_wetland_mangrove,0.882613,"Sparse GNSS anchor, positive control"
+Brantas,weak-anchor sensitivity,built_up,1.59171,1.01473,2.69633,positive,0.591713,built_up,0.446212,0.271212,0.446212,0.145455,water_wetland_mangrove,0.927981,"Weak anchor, useful sensitivity case"
+Rhine,specification control,vegetation_non_crop,0.810149,0.544942,1.26623,inconclusive,-0.189851,vegetation_non_crop,0.416602,0.301520,0.163800,0.114971,water_wetland_mangrove,0.991554,"Control/specification case"
+Japan Niigata,transfer extension,public LiCSBAS,NA,NA,NA,transfer_extension,NA,public LiCSBAS,NA,NA,NA,NA,NA,NA,"Selective ingest of Niigata sample confirms non-Europe public product extension"
+Iran nationwide,transfer extension,public processed InSAR,NA,NA,NA,transfer_extension,NA,public processed InSAR,NA,NA,NA,NA,NA,NA,"Nationwide no-token processed InSAR extension"

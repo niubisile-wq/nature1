@@ -1,0 +1,6 @@
+component,role,manuscript_use,remaining_gap
+decision_facing_exposure_matrix,main table,Results or Extended Data main exposure table,public DOI still pending
+multi_region_infrastructure_translation,infrastructure companion,lead-case transport/infrastructure appendix,non-lead infrastructure layers incomplete
+full_all_region_hierarchical_closure,model-family appendix,all-region closure note,closure-by-compilation is not a new fit
+multi_region_technical_validation,validation appendix,methods/validation appendix,final multi-region polygon/equal-area benchmark missing
+release_and_decision_gap_memo,release appendix,release-state transparency note,DOI not minted yet

@@ -1,0 +1,68 @@
+[
+  {
+    "zip": "C:\\Users\\刘子轩\\radar_outputs\\japan_licsbas_selected_probe\\151_Niigata_039A_05193_040711_TS_GEOCml1.zip",
+    "h5_member": "151_Niigata_039A_05193_040711_TS_GEOCml1/cum.h5",
+    "shape_yx": [
+      163,
+      335
+    ],
+    "n_time_steps": 111,
+    "date_start": "20150430",
+    "date_end": "20200209",
+    "bbox_wgs84": {
+      "lon_min": 138.8988333,
+      "lon_max": 139.2328333,
+      "lat_min": 37.836111100000004,
+      "lat_max": 37.9981111
+    },
+    "post_lon": 0.001,
+    "post_lat": -0.001,
+    "velocity_stats": {
+      "finite_count": 34000,
+      "min": -39.10134506225586,
+      "p05": -10.668597221374512,
+      "p25": -3.852146625518799,
+      "median": -1.016437292098999,
+      "mean": -2.0599157897356464,
+      "p75": 1.1250402927398682,
+      "p95": 2.526461124420166,
+      "max": 12.752750396728516,
+      "fraction_lt_minus_5": 0.18838235294117647,
+      "fraction_lt_minus_10": 0.05844117647058823
+    },
+    "velocity_unit_note": "LiCSBAS velocity convention; verify unit in source paper before manuscript claims."
+  },
+  {
+    "zip": "C:\\Users\\刘子轩\\radar_outputs\\japan_licsbas_selected_probe\\151_Niigata_039A_05193_040711_TS_GEOCml1.zip",
+    "h5_member": "151_Niigata_039A_05193_040711_TS_GEOCml1/cum_filt.h5",
+    "shape_yx": [
+      163,
+      335
+    ],
+    "n_time_steps": 111,
+    "date_start": "20150430",
+    "date_end": "20200209",
+    "bbox_wgs84": {
+      "lon_min": 138.8988333,
+      "lon_max": 139.2328333,
+      "lat_min": 37.836111100000004,
+      "lat_max": 37.9981111
+    },
+    "post_lon": 0.001,
+    "post_lat": -0.001,
+    "velocity_stats": {
+      "finite_count": 34000,
+      "min": -38.323638916015625,
+      "p05": -10.044249534606934,
+      "p25": -3.239388942718506,
+      "median": -0.40927377343177795,
+      "mean": -1.4453247131477922,
+      "p75": 1.7418794631958008,
+      "p95": 3.1410372257232666,
+      "max": 13.367132186889648,
+      "fraction_lt_minus_5": 0.16223529411764706,
+      "fraction_lt_minus_10": 0.05041176470588235
+    },
+    "velocity_unit_note": "LiCSBAS velocity convention; verify unit in source paper before manuscript claims."
+  }
+]

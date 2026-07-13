@@ -1,0 +1,7 @@
+{
+  "benchmark": "C:\\Users\\刘子轩\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_region_evidence_v0_1.csv",
+  "japan": "C:\\Users\\刘子轩\\Desktop\\nature\\04_japan_licsbas_probe\\h5_velocity_summary.json",
+  "iran": "C:\\Users\\刘子轩\\Desktop\\nature\\05_iran_insar_probe\\tif_inspection.json",
+  "iran_image": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_rate_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.jpg",
+  "output_dir": "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1"
+}

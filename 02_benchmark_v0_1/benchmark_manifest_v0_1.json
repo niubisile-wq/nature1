@@ -1,0 +1,31 @@
+{
+  "name": "Open InSAR Observability Bias and Exposure Benchmark",
+  "version": "v0.1",
+  "date": "2026-07-09",
+  "status": "landed_scaffold_pending_egms_dense_benchmark",
+  "primary_claim": "Open InSAR observability gaps can censor land-subsidence exposure estimates.",
+  "nature_gate": {
+    "innovation_framework": "pass",
+    "multi_region_signal": "partial_pass",
+    "landcover_adjustment": "pass",
+    "sparse_independent_gnss_anchors": "partial_pass",
+    "non_us_public_deformation_product_extension": "pass_niigata_selected_probe",
+    "dense_independent_egms_benchmark": "pending_token",
+    "area_weighted_exposure_overlay": "pending",
+    "nature_readiness": "conditional_go_after_egms"
+  },
+  "input_outputs": {
+    "delta_worldcover_model": "C:\\Users\\刘子轩\\radar_outputs\\delta_binomial_with_worldcover_main",
+    "extended_model": "C:\\Users\\刘子轩\\radar_outputs\\extended_region_binomial_with_candidates",
+    "ngl_probe": "C:\\Users\\刘子轩\\radar_outputs\\rescue_dataset_probe",
+    "egms_query_pack": "C:\\Users\\刘子轩\\radar_outputs\\egms_api_rescue_queries",
+    "japan_selected_probe": "C:\\Users\\刘子轩\\radar_outputs\\japan_licsbas_selected_probe"
+  },
+  "files": {
+    "region_evidence": "benchmark_region_evidence_v0_1.csv",
+    "external_candidates": "benchmark_external_candidates_v0_1.csv",
+    "dataset_inventory": "benchmark_dataset_inventory_v0_1.csv",
+    "report": "benchmark_v0_1_report.md",
+    "readme": "README.md"
+  }
+}

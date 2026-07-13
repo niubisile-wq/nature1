@@ -1,0 +1,22 @@
+[
+  {
+    "status": "cached",
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_rate_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.jpg",
+    "bytes": 1808016
+  },
+  {
+    "status": "cached",
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_rate_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.tif",
+    "bytes": 38571343
+  },
+  {
+    "status": "cached",
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_seasonal_amplitude_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.tif",
+    "bytes": 2097152
+  },
+  {
+    "status": "cached",
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_mask_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.tif",
+    "bytes": 1559304
+  }
+]

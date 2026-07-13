@@ -1,0 +1,7 @@
+region,country_or_area,country_iso,series_label,latest_year,latest_value,status,source_url,notes
+Po,Italy,ITA,Italy,2023,0.915,retrieved_from_public_table,https://globaldatalab.org/shdi/table/shdi/ITA/,National SHDI row fetched from the public Global Data Lab table page (ITAt: Italy).
+Chao Phraya,Thailand,THA,Total,2023,0.798,retrieved_from_public_table,https://globaldatalab.org/shdi/table/shdi/THA/,National SHDI row fetched from the public Global Data Lab table page (THAt: Total).
+Brantas,Indonesia,IDN,Total,2023,0.728,retrieved_from_public_table,https://globaldatalab.org/shdi/table/shdi/IDN/,National SHDI row fetched from the public Global Data Lab table page (IDNt: Total).
+Indus,Pakistan_or_India_basin_context,IND,Total,2023,0.685,retrieved_from_public_table,https://globaldatalab.org/shdi/table/shdi/IND/,National SHDI row fetched from the public Global Data Lab table page (INDt: Total).
+Rhone,France,FRA,France,2023,0.920,retrieved_from_public_table,https://globaldatalab.org/shdi/table/shdi/FRA/,National SHDI row fetched from the public Global Data Lab table page (FRAt: France).
+Rhine,Multi_country_basin_context,,,,,multi_country_context_unresolved,,No single-country context mapping was frozen for this multi-country basin context.

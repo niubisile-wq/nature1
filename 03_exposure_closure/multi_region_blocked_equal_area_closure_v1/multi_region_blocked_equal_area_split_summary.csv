@@ -1,0 +1,5 @@
+split,n_regions,pooled_or
+signal_positive,5,2.0471147011437973
+control_specification,1,0.810149
+sparse_anchor,4,1.5401361058522216
+weak_anchor,2,2.3641676956651083

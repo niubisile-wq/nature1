@@ -1,0 +1,6 @@
+family,required_input,status,report_metric,stop_rule
+summary_only_meta,multi_region_summary_meta_closure_v1,frozen,pooled_OR + CI + LOO,error if split expands
+blocked_equal_area_synthesis,multi_region_blocked_equal_area_closure_v1,frozen,pooled_OR + CI + LOO,error if new validation split is opened
+hierarchical_anchor_stack,hierarchical_anchor_closure_v1,frozen,pooled_OR + CI + LOO,error if missing helper modules are required
+stratified_control_landcover_size_stack,multi_region_stratified_control_closure_v1,frozen,pooled_OR + CI + LOO,error if candidate family must be expanded
+full_all_region_hierarchical_fit,current frozen inputs only,conditional,pooled_OR + CI + LOO,fail if not buildable from frozen inputs

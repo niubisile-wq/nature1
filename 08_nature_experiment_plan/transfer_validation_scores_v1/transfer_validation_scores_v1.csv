@@ -1,0 +1,9 @@
+scope,target,signal,anchor,evidence_type,status,readable,directional_support,independent_truth,token_required,notes
+regional_benchmark,Po,positive,sparse_gnss_anchor,regional_lineage_extension,supported,1,1,0,1,conditional_nature_go_after_egms
+regional_benchmark,Chao Phraya,strong_positive,sparse_gnss_anchor,regional_lineage_extension,partial,1,0,0,0,benchmark_v0_landed_needs_dense_truth
+regional_benchmark,Indus,strong_positive,weak_or_missing_gnss_anchor,regional_lineage_extension,partial,1,0,0,0,statistical_signal_needs_independent_anchor
+regional_benchmark,Rhone,positive,sparse_gnss_anchor,regional_lineage_extension,supported,1,1,0,1,conditional_nature_go_after_egms
+regional_benchmark,Brantas,positive,weak_or_missing_gnss_anchor,regional_lineage_extension,partial,1,0,0,0,statistical_signal_needs_independent_anchor
+regional_benchmark,Rhine,inconclusive,sparse_gnss_anchor,regional_lineage_extension,control,1,0,0,1,control_or_specification_case
+external_transfer,Japan Niigata,subsidence_lineage_extension,public_licsbas_product,public_selective_download,supported,1,1,0,0,n_time_steps=111; fraction_lt_minus_5=0.188
+external_transfer,Iran nationwide InSAR,no_token_processed_insar_extension,public_zenodo_product,no_token_processed_raster,supported,1,1,0,0,rate_median=1.800; mask_median=0.0

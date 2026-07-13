@@ -1,0 +1,16 @@
+{
+  "artifact": "multi_region_blocked_equal_area_closure_v1",
+  "n_regions": 6,
+  "random_effects_or": 1.770236788348802,
+  "equal_area_or_by_cell_count": 2.205861435639213,
+  "equal_area_or_by_strong_cell_count": 3.1160676927600095,
+  "population_weighted_signal_proxy_or": 2.140366608551191,
+  "files": [
+    "multi_region_blocked_equal_area_region_table.csv",
+    "multi_region_blocked_equal_area_meta_regression.csv",
+    "multi_region_blocked_equal_area_leave_one_out.csv",
+    "multi_region_blocked_equal_area_weighted_summary.csv",
+    "multi_region_blocked_equal_area_split_summary.csv",
+    "multi_region_blocked_equal_area_report.md"
+  ]
+}

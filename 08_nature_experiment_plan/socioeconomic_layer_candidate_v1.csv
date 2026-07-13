@@ -1,0 +1,5 @@
+candidate,source,coverage,interpretation,role
+GRDI v1,"NASA Earthdata / SEDAC","global 30 arc-second raster","multidimensional deprivation and poverty index","preferred next-layer candidate"
+SHDI,"Global Data Lab","subnational administrative units","education, health, standard of living","region-level fallback"
+Nightlights,"World Bank / harmonized nightlight products","global raster proxy","economic activity / electrification proxy","secondary fallback"
+

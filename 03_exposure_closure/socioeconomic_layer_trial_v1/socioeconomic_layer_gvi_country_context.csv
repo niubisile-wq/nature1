@@ -1,0 +1,7 @@
+region,country_or_area,country_iso,series_label,latest_year,latest_value,status,source_url,notes
+Po,Italy,ITA,Italy,2013,25.2,retrieved_from_public_table,https://globaldatalab.org/gvi/table/gvi/ITA/,National GVI row fetched from the public Global Data Lab table page (ITAt: Italy).
+Chao Phraya,Thailand,THA,Total,2013,32.3,retrieved_from_public_table,https://globaldatalab.org/gvi/table/gvi/THA/,National GVI row fetched from the public Global Data Lab table page (THAt: Total).
+Brantas,Indonesia,IDN,Total,2013,39.5,retrieved_from_public_table,https://globaldatalab.org/gvi/table/gvi/IDN/,National GVI row fetched from the public Global Data Lab table page (IDNt: Total).
+Indus,Pakistan_or_India_basin_context,IND,Total,2013,48.3,retrieved_from_public_table,https://globaldatalab.org/gvi/table/gvi/IND/,National GVI row fetched from the public Global Data Lab table page (INDt: Total).
+Rhone,France,FRA,France,2013,23.6,retrieved_from_public_table,https://globaldatalab.org/gvi/table/gvi/FRA/,National GVI row fetched from the public Global Data Lab table page (FRAt: France).
+Rhine,Multi_country_basin_context,,,,,multi_country_context_unresolved,,No single-country context mapping was frozen for this multi-country basin context.

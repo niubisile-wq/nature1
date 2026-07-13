@@ -1,0 +1,7 @@
+region,population_layer,built_up_layer,infrastructure_layer,key_metric,interpretation
+Po,available,available,not_yet_translated,"population_not_majority_observable_fraction=0.340347; built_up_not_majority_observable_fraction=0.460331","Strong-motion exposure is measurable in people and built-up area, but transport/infrastructure still needs the same treatment."
+Chao_Phraya,available,available,available,"population_not_majority_observable_fraction=0.170; built_up_not_majority_observable_fraction=0.326; transport_hidden_fraction_median=0.531","Lead-case multi-level exposure translation with materially hidden people, built-up area, and transport infrastructure."
+Brantas,available,available,not_yet_translated,"population_not_majority_observable_fraction=0.145903; built_up_not_majority_observable_fraction=0.175993","Positive signal survives on population and built-up layers, but infrastructure translation is still missing."
+Indus,partial_proxy_only,partial_proxy_only,not_yet_translated,"risk_proxy=2.3894","Statistical signal exists, but exposure translation needs a cleaner population/building schema."
+Rhone,partial_proxy_only,partial_proxy_only,not_yet_translated,"risk_proxy=0.591777","Useful as a conditional upgrade case, but exposure translation is not yet as complete as the lead case."
+Rhine,proxy_control,proxy_control,not_yet_translated,"risk_proxy=-0.189851","Control/specification case; it should stay in the manuscript as a non-reproducing comparator."

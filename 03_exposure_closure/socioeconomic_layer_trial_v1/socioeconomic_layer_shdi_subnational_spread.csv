@@ -1,0 +1,7 @@
+region,country_or_area,country_iso,source,year,national_value,subnational_count,subnational_min,subnational_median,subnational_max,spread_note
+Po,Italy,ITA,SHDI,2023,0.915,20,0.9,0.9,0.9,retrieved_from_public_table
+Chao Phraya,Thailand,THA,SHDI,2023,0.798,4,0.8,0.8,0.8,retrieved_from_public_table
+Brantas,Indonesia,IDN,SHDI,2023,0.728,29,0.5,0.7,0.8,retrieved_from_public_table
+Indus,Pakistan_or_India_basin_context,IND,SHDI,2023,0.685,35,0.6,0.7,0.8,retrieved_from_public_table
+Rhone,France,FRA,SHDI,2023,0.920,26,0.8,0.9,1.0,retrieved_from_public_table
+Rhine,Multi_country_basin_context,,SHDI,,,,,,,multi_country_context_unresolved

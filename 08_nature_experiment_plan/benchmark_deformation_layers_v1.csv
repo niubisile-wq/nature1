@@ -1,0 +1,10 @@
+layer_id,region_or_product,source_type,unit_convention,sign_convention,independent_anchor_status,current_status,evidence_file,notes
+L1,Po,delta VLM,mm/yr,negative=subsidence,sparse_gnss_anchor,open_benchmark,..\02_benchmark_v0_1\benchmark_region_evidence_v0_1.csv,European control lead pending EGMS closure
+L2,Chao Phraya,delta VLM,mm/yr,negative=subsidence,sparse_gnss_anchor,open_benchmark,..\02_benchmark_v0_1\benchmark_region_evidence_v0_1.csv,Primary lead case with strong positive signal
+L3,Indus,delta VLM,mm/yr,negative=subsidence,weak_or_missing_gnss_anchor,open_benchmark,..\02_benchmark_v0_1\benchmark_region_evidence_v0_1.csv,Strong signal but weaker independent anchor
+L4,Rhone,delta VLM,mm/yr,negative=subsidence,sparse_gnss_anchor,open_benchmark,..\02_benchmark_v0_1\benchmark_region_evidence_v0_1.csv,European upgrade path pending EGMS closure
+L5,Brantas,delta VLM,mm/yr,negative=subsidence,weak_or_missing_gnss_anchor,open_benchmark,..\02_benchmark_v0_1\benchmark_region_evidence_v0_1.csv,Weak-anchor sensitivity case
+L6,Rhine,delta VLM,mm/yr,negative=subsidence,sparse_gnss_anchor,control_or_specification_case,..\02_benchmark_v0_1\benchmark_region_evidence_v0_1.csv,Negative/specification case
+L7,Japan Niigata,LiCSBAS velocity,mm/yr,negative=subsidence,product_lineage_extension,product_lineage_extension,C:\Users\刘子轩\Desktop\nature\04_japan_licsbas_probe\japan_licsbas_selected_probe_report.md,Selective ingest sample; not independent truth
+L8,Iran nationwide InSAR,Zenodo processed InSAR,mm/yr,positive file median indicates uplift-like convention until paper legend is cross-checked,product_lineage_extension,product_lineage_extension,C:\Users\刘子轩\Desktop\nature\05_iran_insar_probe\iran_insar_zenodo_probe_report.md,Rate file readable; seasonal amplitude audit incomplete
+L9,EGMS rescue pack,API query pack,query payloads only,not a data layer,token_required,query_pack_ready,C:\Users\刘子轩\Desktop\nature\06_egms_query_pack\egms_api_rescue_plan.md,No-token route blocked until CLMS token is available

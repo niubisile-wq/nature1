@@ -1,0 +1,10 @@
+split_role,region_or_block,status,usage_note
+discovery,Chao Phraya,active,Primary lead case for developing candidate stacks and debugging models.
+discovery,Brantas,active,Secondary discovery region for weak-anchor sensitivity.
+tuning,Po,active,Tuning region for selecting candidate stacks without touching the frozen set.
+tuning,held-out Chao Phraya blocks,active,Spatial holdout for tuning within the lead case.
+frozen_validation,Rhone,active,Opened once after tuning and used as a frozen validation region.
+frozen_validation,Rhine,active,Control/specification validation region.
+frozen_validation,held-out Chao Phraya blocks,active,Remaining spatial holdout not used in tuning.
+external_transfer,Japan Niigata,active,Product-lineage extension for transfer evaluation.
+external_transfer,Iran nationwide InSAR,active,No-token external transfer benchmark.

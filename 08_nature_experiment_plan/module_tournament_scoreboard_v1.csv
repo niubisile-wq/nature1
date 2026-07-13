@@ -1,0 +1,4 @@
+rank,stack_name,artifact,pooled_or,loo_min_or,loo_fraction_gt1,effect_stability,hidden_exposure_relevance,transfer_score,control_specificity,reproducibility_score,composite_score
+1,hybrid_cell_anchored,hierarchical_anchor_closure_v1,1.9646318688752513,1.562220555655902,1.0,0.9823159344376257,0.6306225761124962,0.7951721543386501,1.0,1.0,0.860500651949023
+2,summary_only,multi_region_summary_meta_closure_v1,1.770236788348802,1.5449679104690053,1.0,0.885118394174401,0.6306225761124962,0.8727464713407536,1.0,1.0,0.841996376257315
+3,blocked_equal_area,multi_region_blocked_equal_area_closure_v1,1.770236788348802,1.3280436659378478,1.0,0.885118394174401,0.6306225761124962,0.7502067941863234,1.0,1.0,0.817488440826429

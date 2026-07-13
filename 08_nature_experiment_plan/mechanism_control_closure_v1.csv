@@ -1,0 +1,6 @@
+family,reference_or,reference_ci_low,reference_ci_high,loo_mae,loo_max_abs_error,n_terms,claim_role
+landcover_size_stack,1.790344,1.533009,2.090875,0.203594,0.381234,9,primary control stack
+full_stratified_control_stack,1.790344,1.533009,2.090875,0.333568,0.601362,16,richer but less stable stack
+exposure_composition_stack,1.790343,1.533009,2.090875,0.460911,0.940007,7,exposure-composition control
+hidden_stratified_stack,1.790346,1.533011,2.090877,0.547958,1.327837,7,hidden-share control
+summary_only_meta,1.770237,1.211863,2.585885,,,"0",baseline benchmark

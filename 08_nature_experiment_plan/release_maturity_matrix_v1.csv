@@ -1,0 +1,10 @@
+requirement,nature_source,current_local_evidence,status,blocking_gap
+Minimum dataset for review,"Nature reporting standards; Nature support data-availability guidance","11_submission_ready_v1/source_data/ contains benchmark inventories, closure tables, figure source data, validation notes, and runbooks",local complete; public mint pending,"public DOI and version-specific repository URL"
+Technical validation,"Scientific Data submission guidelines; Scientific Data for referees","multi_region_technical_validation_v1.md consolidates observability, sign/unit, blocked/equal-area, stratified control, and transfer evidence",complete locally,"public deposit not yet minted"
+Code availability,"Nature reporting standards; Nature Communications policy language","analysis scripts, figure scripts, finalizers, and validators are stored in the submission package",local complete; public URL pending,"version-specific repository URL"
+Persistent repository metadata,"Scientific Data repository guidance","zenodo_metadata_v1.json, zenodo_deposit_preview_v1.json, doi_release_checklist_v1.md, and zenodo_submission_runbook_v1.md are frozen and DOI-ready",DOI-ready; not minted,"public DOI and repository record"
+Figure source data,"Nature reporting standards","figures/09_figures_v1/ and the mirrored figure assets are in the release package",complete locally,"public hosting / mint record"
+Reproducibility indexes,"Nature-family review norms","source_data_inventory_v1.csv, submission_checksums_v1.md, and submission_archive_hash_v1.md are synchronized",complete locally,"none locally"
+External benchmark closure,"Nature-family exposure / validation papers","EGMS/CLMS remains token-blocked; Japan and Iran are explicitly labeled lineage extensions",partial,"external token access and live benchmark closure"
+Decision-facing release story,"Nature-family exposure / infrastructure papers","decision_facing_exposure_matrix_v1, multi_region_infrastructure_translation_v1, and manuscript_ready_decision_release_package_v1 are frozen",complete locally,"public release identifiers still pending"
+

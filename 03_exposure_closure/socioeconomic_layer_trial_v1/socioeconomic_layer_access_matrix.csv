@@ -1,0 +1,7 @@
+region,preferred_source,secondary_source,country_or_area,trial_mode,country_iso,access_status,notes
+Po,GVI,SHDI,Italy,region_level_context,ITA,ready_for_gvi_trial,GVI is a public vulnerability index and is the preferred socioeconomic context layer for the current trial.
+Chao Phraya,GVI,SHDI,Thailand,region_level_context,THA,ready_for_gvi_trial,GVI is a public vulnerability index and is the preferred socioeconomic context layer for the current trial.
+Brantas,GVI,SHDI,Indonesia,region_level_context,IDN,ready_for_gvi_trial,GVI is a public vulnerability index and is the preferred socioeconomic context layer for the current trial.
+Indus,GVI,SHDI,Pakistan_or_India_basin_context,multi_country_context,IND,ready_for_gvi_trial,GVI is a public vulnerability index and is the preferred socioeconomic context layer for the current trial.
+Rhone,GVI,SHDI,France,region_level_context,FRA,ready_for_gvi_trial,GVI is a public vulnerability index and is the preferred socioeconomic context layer for the current trial.
+Rhine,GVI,SHDI,Multi_country_basin_context,multi_country_context,,ready_for_gvi_trial,GVI is a public vulnerability index and is the preferred socioeconomic context layer for the current trial.

@@ -1,0 +1,9 @@
+step,script,primary_outputs,current_status,blocker
+1,07_scripts_and_registry/fit_chao_phraya_nature_model_selfcontained.py,"Chao Phraya primary report; coefficients; bootstrap table; block-split diagnostics",rerunnable,
+2,07_scripts_and_registry/compute_chao_phraya_area_weighted_exposure.py,"area-weighted exposure closure tables",rerunnable,
+2,07_scripts_and_registry/compute_chao_phraya_osm_exposure_censoring.py,"OSM exposure censoring tables",rerunnable,
+2,07_scripts_and_registry/compute_chao_phraya_robustness_grid.py,"robustness grid and sensitivity summaries",rerunnable,
+3,07_scripts_and_registry/fit_multi_region_blocked_equal_area_closure.py,"blocked/equal-area region table; meta-regression; leave-one-out table",rerunnable,"frozen benchmark CSVs must remain intact"
+4,07_scripts_and_registry/fit_hierarchical_model_comparison.py,"hierarchical comparison; coefficients; leave-one-out table",rerunnable,"comparison inputs must remain intact"
+5,07_scripts_and_registry/build_transfer_validation_scores.py,"transfer validation CSV and MD summary",rerunnable,"probe JSON outputs must exist"
+6,"07_scripts_and_registry/make_figure_1_concept_dataset.py through 07_scripts_and_registry/make_figure_7_hierarchical_model.py","main figure set and source-data exports",conditional,"rerun only after upstream tables change"

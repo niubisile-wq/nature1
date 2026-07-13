@@ -1,0 +1,19 @@
+{
+  "artifact": "multi_region_stratified_control_closure_v1",
+  "source": "02_benchmark_v0_1\\benchmark_region_evidence_v0_1.csv",
+  "files": [
+    "multi_region_stratified_control_comparison.csv",
+    "multi_region_stratified_control_coefficients.csv",
+    "multi_region_stratified_control_leave_one_out.csv",
+    "multi_region_stratified_control_report.md"
+  ],
+  "families": [
+    "summary_only_meta",
+    "landcover_size_stack",
+    "exposure_composition_stack",
+    "hidden_stratified_stack",
+    "full_stratified_control_stack"
+  ],
+  "n_regions": 6,
+  "best_family": "landcover_size_stack"
+}

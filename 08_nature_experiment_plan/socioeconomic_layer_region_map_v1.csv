@@ -1,0 +1,8 @@
+region,preferred_source,country_or_area,trial_mode,access_status,notes
+Po,SHDI,Italy,region_level_context,ready_for_shdi_trial,Region-level socioeconomic context can be built without pretending pixel precision.
+Chao Phraya,SHDI,Thailand,region_level_context,ready_for_shdi_trial,Region-level socioeconomic context can be built without pretending pixel precision.
+Brantas,SHDI,Indonesia,region_level_context,ready_for_shdi_trial,Region-level socioeconomic context can be built without pretending pixel precision.
+Indus,SHDI,Pakistan_or_India_basin_context,multi_country_context,ready_for_shdi_trial,Region-level socioeconomic context can be built without pretending pixel precision.
+Rhone,SHDI,France,region_level_context,ready_for_shdi_trial,Region-level socioeconomic context can be built without pretending pixel precision.
+Rhine,SHDI,Multi_country_basin_context,multi_country_context,ready_for_shdi_trial,Region-level socioeconomic context can be built without pretending pixel precision.
+

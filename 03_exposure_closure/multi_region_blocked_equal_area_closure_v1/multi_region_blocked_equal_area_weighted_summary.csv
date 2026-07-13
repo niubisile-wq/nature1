@@ -1,0 +1,5 @@
+scheme,pooled_or,ci_low,ci_high,notes
+inverse_variance,1.770236788348802,1.2118630603494314,2.5858848159955397,Random-effects pooled OR from regional summary evidence.
+equal_area_by_cell_count,2.205861435639213,nan,nan,Equal-area proxy weighted by region cell count; summary-level approximation.
+equal_area_by_strong_cell_count,3.1160676927600095,nan,nan,Stronger area-weighted proxy weighted by strong-cell count.
+population_weighted_signal_proxy,2.140366608551191,nan,nan,Population-weighted proxy using strong-subsidence population fraction.

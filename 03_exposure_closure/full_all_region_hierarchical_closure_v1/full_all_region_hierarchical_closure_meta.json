@@ -1,0 +1,15 @@
+{
+  "artifact": "full_all_region_hierarchical_closure_v1",
+  "comparison_source": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\03_exposure_closure\\hierarchical_model_v1\\hierarchical_model_comparison.csv",
+  "exposure_source": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\08_nature_experiment_plan\\multi_region_exposure_translation_v1.csv",
+  "technical_validation_source": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\08_nature_experiment_plan\\multi_region_technical_validation_v1.md",
+  "sign_unit_audit_source": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\08_nature_experiment_plan\\benchmark_sign_unit_audit_v1.md",
+  "protocol_source": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\08_nature_experiment_plan\\full_all_region_hierarchical_closure_v1.md",
+  "fit_status": "closure_by_compilation_only",
+  "families": [
+    "stratified_control_landcover_size_stack",
+    "hierarchical_anchor_stack",
+    "summary_only_meta",
+    "full_all_region_hierarchical_fit"
+  ]
+}

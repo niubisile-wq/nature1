@@ -1,0 +1,7 @@
+region,role,signal,underestimation_proxy,population_layer,built_up_layer,infrastructure_layer,transfer_status,decision_readiness,exposure_completeness_score,claim_role
+Chao Phraya,lead_case,strong_positive,2.561870,available,available,available,lead_case,strongest current case,3/3,primary exposure undercount
+Po,regional_benchmark,positive,0.328935,available,available,not_yet_translated,regional_benchmark,conditional go after EGMS,2/3,regional exposure undercount
+Brantas,regional_benchmark,positive,0.591713,available,available,not_yet_translated,regional_benchmark,"statistical signal, infrastructure gap remains",2/3,regional exposure undercount
+Indus,regional_benchmark,strong_positive,2.389400,proxy_only,proxy_only,not_yet_translated,regional_benchmark,"statistical signal, weak anchor",1/3,proxy-based undercount
+Rhone,regional_benchmark,positive,0.591777,proxy_only,proxy_only,not_yet_translated,regional_benchmark,conditional upgrade case,1/3,proxy-based undercount
+Rhine,control_specification,inconclusive,-0.189851,proxy_only,proxy_only,not_yet_translated,control_specification,control / negative case,1/3,control specification

@@ -1,0 +1,21 @@
+{
+  "overpass_endpoint": "https://overpass-api.de/api/interpreter",
+  "osm_way_count_by_category": {
+    "major_road": 17460,
+    "railway": 1353
+  },
+  "osm_highway_values": {
+    "primary": 3620,
+    "motorway": 906,
+    "secondary": 5335,
+    "tertiary": 5855,
+    "trunk": 1744
+  },
+  "osm_railway_values": {
+    "rail": 1353
+  },
+  "segment_count": 287760,
+  "used_segment_count": 166057,
+  "coherence_threshold": 0.3,
+  "sample_factor": 1.0
+}

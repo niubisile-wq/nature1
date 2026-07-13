@@ -1,0 +1,7 @@
+{
+  "benchmark": "C:\\Users\\刘子轩\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_region_evidence_v0_1.csv",
+  "dataset": "C:\\Users\\刘子轩\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_dataset_inventory_v0_1.csv",
+  "output_dir": "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1",
+  "regions": 6,
+  "datasets": 3
+}

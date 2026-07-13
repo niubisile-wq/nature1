@@ -1,0 +1,21 @@
+# Large generated artifacts
+*.zip
+*.tif
+*.tiff
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local build / release packages
+11_submission_ready_v1/
+11_submission_ready_v1_stage/
+radar_outputs/
+
+# Temporary files
+_tmp*
+

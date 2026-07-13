@@ -1,0 +1,24 @@
+{
+  "source_csv": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_area_weighted_exposure_censoring\\chao_phraya_area_weighted_exposure_cells.csv",
+  "out_tif": "C:\\Users\\刘子轩\\Desktop\\nature\\08_nature_experiment_plan\\observability_masks_chao_phraya_v1_georef.tif",
+  "shape": [
+    241,
+    167
+  ],
+  "bands": [
+    "observable_count",
+    "observable_fraction",
+    "any_observable",
+    "majority_observable",
+    "not_majority_observable",
+    "strong_sub_5mm",
+    "population_weighted",
+    "builtup_m2_weighted"
+  ],
+  "pixel_size_lon": 0.0083333333000013,
+  "pixel_size_lat": 0.008333333299836099,
+  "tie_lon": 99.82374960699997,
+  "tie_lat": 14.69125012960706,
+  "crs_epsg": 4326,
+  "note": "Georeferenced multiband TIFF reconstructed from the local cell-level CSV using the grid center coordinates."
+}

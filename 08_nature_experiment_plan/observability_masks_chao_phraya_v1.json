@@ -1,0 +1,19 @@
+{
+  "source_csv": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_area_weighted_exposure_censoring\\chao_phraya_area_weighted_exposure_cells.csv",
+  "out_tif": "C:\\Users\\刘子轩\\Desktop\\nature\\08_nature_experiment_plan\\observability_masks_chao_phraya_v1.tif",
+  "shape": [
+    241,
+    167
+  ],
+  "bands": [
+    "observable_count",
+    "observable_fraction",
+    "any_observable",
+    "majority_observable",
+    "not_majority_observable",
+    "strong_sub_5mm",
+    "population_weighted",
+    "builtup_m2_weighted"
+  ],
+  "note": "Multiband TIFF reconstructed from the local cell-level CSV; georeferencing is logically inherited from the source VLM grid but not embedded here."
+}

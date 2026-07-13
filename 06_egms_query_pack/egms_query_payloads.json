@@ -1,0 +1,518 @@
+[
+  {
+    "aoi_id": "po_venice_broad",
+    "aoi_name": "Po Basin and Venice",
+    "priority": "A",
+    "role": "EGMS benchmark for Po/Venice LiCSAR observability bias",
+    "reason": "European high-quality benchmark overlapping the Po delta and Venice subsidence literature.",
+    "query_kind": "l3_ortho_up",
+    "purpose": "Primary vertical-motion benchmark for exposure and observability closure.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          10.0,
+          44.0
+        ],
+        [
+          13.0,
+          46.0
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-UP"
+    }
+  },
+  {
+    "aoi_id": "po_venice_broad",
+    "aoi_name": "Po Basin and Venice",
+    "priority": "A",
+    "role": "EGMS benchmark for Po/Venice LiCSAR observability bias",
+    "reason": "European high-quality benchmark overlapping the Po delta and Venice subsidence literature.",
+    "query_kind": "l3_ortho_east",
+    "purpose": "Optional horizontal component sanity check for coastal/delta deformation interpretation.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          10.0,
+          44.0
+        ],
+        [
+          13.0,
+          46.0
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-EAST"
+    }
+  },
+  {
+    "aoi_id": "po_venice_broad",
+    "aoi_name": "Po Basin and Venice",
+    "priority": "A",
+    "role": "EGMS benchmark for Po/Venice LiCSAR observability bias",
+    "reason": "European high-quality benchmark overlapping the Po delta and Venice subsidence literature.",
+    "query_kind": "l2b_calibrated",
+    "purpose": "Optional calibrated-track product for product-bias transfer-function tests.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          10.0,
+          44.0
+        ],
+        [
+          13.0,
+          46.0
+        ]
+      ],
+      "levels": [
+        "L2B"
+      ],
+      "releases": [
+        "2019-2023"
+      ]
+    }
+  },
+  {
+    "aoi_id": "po_delta_core",
+    "aoi_name": "Po delta core",
+    "priority": "A",
+    "role": "Core positive-control delta benchmark",
+    "reason": "Small AOI around the current Po-delta VLM/LiCSAR prototype for fast EGMS closure.",
+    "query_kind": "l3_ortho_up",
+    "purpose": "Primary vertical-motion benchmark for exposure and observability closure.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          11.7,
+          44.35
+        ],
+        [
+          12.9,
+          45.55
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-UP"
+    }
+  },
+  {
+    "aoi_id": "po_delta_core",
+    "aoi_name": "Po delta core",
+    "priority": "A",
+    "role": "Core positive-control delta benchmark",
+    "reason": "Small AOI around the current Po-delta VLM/LiCSAR prototype for fast EGMS closure.",
+    "query_kind": "l3_ortho_east",
+    "purpose": "Optional horizontal component sanity check for coastal/delta deformation interpretation.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          11.7,
+          44.35
+        ],
+        [
+          12.9,
+          45.55
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-EAST"
+    }
+  },
+  {
+    "aoi_id": "po_delta_core",
+    "aoi_name": "Po delta core",
+    "priority": "A",
+    "role": "Core positive-control delta benchmark",
+    "reason": "Small AOI around the current Po-delta VLM/LiCSAR prototype for fast EGMS closure.",
+    "query_kind": "l2b_calibrated",
+    "purpose": "Optional calibrated-track product for product-bias transfer-function tests.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          11.7,
+          44.35
+        ],
+        [
+          12.9,
+          45.55
+        ]
+      ],
+      "levels": [
+        "L2B"
+      ],
+      "releases": [
+        "2019-2023"
+      ]
+    }
+  },
+  {
+    "aoi_id": "netherlands_lowlands",
+    "aoi_name": "Netherlands lowlands",
+    "priority": "A",
+    "role": "Independent EGMS lowland benchmark",
+    "reason": "Dense European product coverage; separates open-observability bias from purely groundwater framing.",
+    "query_kind": "l3_ortho_up",
+    "purpose": "Primary vertical-motion benchmark for exposure and observability closure.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          3.2,
+          50.7
+        ],
+        [
+          7.2,
+          53.8
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-UP"
+    }
+  },
+  {
+    "aoi_id": "netherlands_lowlands",
+    "aoi_name": "Netherlands lowlands",
+    "priority": "A",
+    "role": "Independent EGMS lowland benchmark",
+    "reason": "Dense European product coverage; separates open-observability bias from purely groundwater framing.",
+    "query_kind": "l3_ortho_east",
+    "purpose": "Optional horizontal component sanity check for coastal/delta deformation interpretation.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          3.2,
+          50.7
+        ],
+        [
+          7.2,
+          53.8
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-EAST"
+    }
+  },
+  {
+    "aoi_id": "netherlands_lowlands",
+    "aoi_name": "Netherlands lowlands",
+    "priority": "A",
+    "role": "Independent EGMS lowland benchmark",
+    "reason": "Dense European product coverage; separates open-observability bias from purely groundwater framing.",
+    "query_kind": "l2b_calibrated",
+    "purpose": "Optional calibrated-track product for product-bias transfer-function tests.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          3.2,
+          50.7
+        ],
+        [
+          7.2,
+          53.8
+        ]
+      ],
+      "levels": [
+        "L2B"
+      ],
+      "releases": [
+        "2019-2023"
+      ]
+    }
+  },
+  {
+    "aoi_id": "rhine_core",
+    "aoi_name": "Rhine-Meuse delta core",
+    "priority": "B",
+    "role": "Specificity control",
+    "reason": "Current WorldCover-adjusted model weakens Rhine; EGMS can test whether this is product/land-cover confounding.",
+    "query_kind": "l3_ortho_up",
+    "purpose": "Primary vertical-motion benchmark for exposure and observability closure.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          3.2,
+          51.0
+        ],
+        [
+          5.2,
+          52.35
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-UP"
+    }
+  },
+  {
+    "aoi_id": "rhine_core",
+    "aoi_name": "Rhine-Meuse delta core",
+    "priority": "B",
+    "role": "Specificity control",
+    "reason": "Current WorldCover-adjusted model weakens Rhine; EGMS can test whether this is product/land-cover confounding.",
+    "query_kind": "l3_ortho_east",
+    "purpose": "Optional horizontal component sanity check for coastal/delta deformation interpretation.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          3.2,
+          51.0
+        ],
+        [
+          5.2,
+          52.35
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-EAST"
+    }
+  },
+  {
+    "aoi_id": "rhine_core",
+    "aoi_name": "Rhine-Meuse delta core",
+    "priority": "B",
+    "role": "Specificity control",
+    "reason": "Current WorldCover-adjusted model weakens Rhine; EGMS can test whether this is product/land-cover confounding.",
+    "query_kind": "l2b_calibrated",
+    "purpose": "Optional calibrated-track product for product-bias transfer-function tests.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          3.2,
+          51.0
+        ],
+        [
+          5.2,
+          52.35
+        ]
+      ],
+      "levels": [
+        "L2B"
+      ],
+      "releases": [
+        "2019-2023"
+      ]
+    }
+  },
+  {
+    "aoi_id": "rhone_delta_core",
+    "aoi_name": "Rhone delta / Camargue core",
+    "priority": "A",
+    "role": "Land-cover mediated delta benchmark",
+    "reason": "Strong signal survives WorldCover controls; EGMS tests whether it is a real public-product observability gap.",
+    "query_kind": "l3_ortho_up",
+    "purpose": "Primary vertical-motion benchmark for exposure and observability closure.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          4.0,
+          43.2
+        ],
+        [
+          5.15,
+          44.05
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-UP"
+    }
+  },
+  {
+    "aoi_id": "rhone_delta_core",
+    "aoi_name": "Rhone delta / Camargue core",
+    "priority": "A",
+    "role": "Land-cover mediated delta benchmark",
+    "reason": "Strong signal survives WorldCover controls; EGMS tests whether it is a real public-product observability gap.",
+    "query_kind": "l3_ortho_east",
+    "purpose": "Optional horizontal component sanity check for coastal/delta deformation interpretation.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          4.0,
+          43.2
+        ],
+        [
+          5.15,
+          44.05
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-EAST"
+    }
+  },
+  {
+    "aoi_id": "rhone_delta_core",
+    "aoi_name": "Rhone delta / Camargue core",
+    "priority": "A",
+    "role": "Land-cover mediated delta benchmark",
+    "reason": "Strong signal survives WorldCover controls; EGMS tests whether it is a real public-product observability gap.",
+    "query_kind": "l2b_calibrated",
+    "purpose": "Optional calibrated-track product for product-bias transfer-function tests.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          4.0,
+          43.2
+        ],
+        [
+          5.15,
+          44.05
+        ]
+      ],
+      "levels": [
+        "L2B"
+      ],
+      "releases": [
+        "2019-2023"
+      ]
+    }
+  },
+  {
+    "aoi_id": "cyprus_sourcecoop_smoke",
+    "aoi_name": "Cyprus Source Cooperative smoke test",
+    "priority": "C",
+    "role": "Cloud-native EGMS format smoke test",
+    "reason": "Matches the public Source Cooperative sample region; useful for parser development, not a Nature benchmark.",
+    "query_kind": "l3_ortho_up",
+    "purpose": "Primary vertical-motion benchmark for exposure and observability closure.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          32.0,
+          34.4
+        ],
+        [
+          34.8,
+          35.8
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-UP"
+    }
+  },
+  {
+    "aoi_id": "cyprus_sourcecoop_smoke",
+    "aoi_name": "Cyprus Source Cooperative smoke test",
+    "priority": "C",
+    "role": "Cloud-native EGMS format smoke test",
+    "reason": "Matches the public Source Cooperative sample region; useful for parser development, not a Nature benchmark.",
+    "query_kind": "l3_ortho_east",
+    "purpose": "Optional horizontal component sanity check for coastal/delta deformation interpretation.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          32.0,
+          34.4
+        ],
+        [
+          34.8,
+          35.8
+        ]
+      ],
+      "levels": [
+        "L3"
+      ],
+      "releases": [
+        "2019-2023"
+      ],
+      "productType": "ORTHO-EAST"
+    }
+  },
+  {
+    "aoi_id": "cyprus_sourcecoop_smoke",
+    "aoi_name": "Cyprus Source Cooperative smoke test",
+    "priority": "C",
+    "role": "Cloud-native EGMS format smoke test",
+    "reason": "Matches the public Source Cooperative sample region; useful for parser development, not a Nature benchmark.",
+    "query_kind": "l2b_calibrated",
+    "purpose": "Optional calibrated-track product for product-bias transfer-function tests.",
+    "payload": {
+      "id": null,
+      "bbox": [
+        [
+          32.0,
+          34.4
+        ],
+        [
+          34.8,
+          35.8
+        ]
+      ],
+      "levels": [
+        "L2B"
+      ],
+      "releases": [
+        "2019-2023"
+      ]
+    }
+  }
+]

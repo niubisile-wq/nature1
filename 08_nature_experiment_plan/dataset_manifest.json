@@ -1,0 +1,74 @@
+{
+  "manifest_name": "Open InSAR observability bias and exposure benchmark",
+  "date": "2026-07-10",
+  "scope": "Local reproducibility and submission handoff manifest",
+  "core_inputs": [
+    {
+      "name": "benchmark_region_evidence_v0_1.csv",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_region_evidence_v0_1.csv",
+      "role": "regional benchmark evidence table"
+    },
+    {
+      "name": "benchmark_dataset_inventory_v0_1.csv",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_dataset_inventory_v0_1.csv",
+      "role": "dataset inventory for benchmark v0.1"
+    },
+    {
+      "name": "chao_phraya_area_weighted_exposure_summary.csv",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_area_weighted_exposure_censoring\\chao_phraya_area_weighted_exposure_summary.csv",
+      "role": "lead-region area-weighted exposure summary"
+    },
+    {
+      "name": "chao_phraya_area_weighted_exposure_cells.csv",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_area_weighted_exposure_censoring\\chao_phraya_area_weighted_exposure_cells.csv",
+      "role": "lead-region cell-level exposure table"
+    },
+    {
+      "name": "chao_phraya_osm_exposure_censoring_summary.csv",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_osm_exposure_censoring\\chao_phraya_osm_exposure_censoring_summary.csv",
+      "role": "lead-region transport exposure summary"
+    },
+    {
+      "name": "chao_phraya_robustness_grid.csv",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\03_exposure_closure\\chao_phraya_robustness_grid\\chao_phraya_robustness_grid.csv",
+      "role": "threshold and bootstrap sensitivity grid"
+    },
+    {
+      "name": "h5_velocity_summary.json",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\04_japan_licsbas_probe\\h5_velocity_summary.json",
+      "role": "Japan LiCSBAS transfer probe"
+    },
+    {
+      "name": "tif_inspection.json",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\05_iran_insar_probe\\tif_inspection.json",
+      "role": "Iran processed InSAR transfer probe"
+    },
+    {
+      "name": "egms_api_rescue_plan.md",
+      "path": "C:\\Users\\刘子轩\\Desktop\\nature\\06_egms_query_pack\\egms_api_rescue_plan.md",
+      "role": "EGMS no-token rescue path"
+    }
+  ],
+  "figure_assets": [
+    "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1\\fig1_concept_dataset_map.pdf",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1\\fig2_chao_phraya_lead_case.pdf",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1\\fig3_chao_phraya_robustness_grid.pdf",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1\\fig4_exposure_translation.pdf",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1\\fig5_controls_transfer.pdf",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\09_figures_v1\\fig6_transfer_scope.pdf"
+  ],
+  "submission_assets": [
+    "C:\\Users\\刘子轩\\Desktop\\nature\\10_manuscript_skeleton\\full_manuscript_draft_v3.md",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\10_manuscript_skeleton\\submission_references_v1.bib",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\10_manuscript_skeleton\\verified_reference_list_v1.md",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\10_manuscript_skeleton\\reference_number_map_v1.md",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\10_manuscript_skeleton\\review_risk_audit_v1.md",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\10_manuscript_skeleton\\final_consistency_audit_v1.md",
+    "C:\\Users\\刘子轩\\Desktop\\nature\\11_submission_ready_v1.zip"
+  ],
+  "missing_public_release_items": [
+    "dataset_manifest.json publication in a public repository",
+    "public DOI or Zenodo release",
+    "CLMS token-enabled EGMS benchmark download path"
+  ]
+}

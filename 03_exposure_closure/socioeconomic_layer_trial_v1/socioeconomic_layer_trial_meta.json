@@ -1,0 +1,10 @@
+{
+  "has_shdi_input": false,
+  "has_grdi_input": false,
+  "has_gvi_web": true,
+  "has_shdi_web": true,
+  "country_context_rows": 6,
+  "gvi_spread_rows": 6,
+  "shdi_spread_rows": 6,
+  "status": "gvi_country_context_retrieved"
+}

@@ -1,0 +1,17 @@
+{
+  "artifact": "final_multi_region_equal_area_closure_v1",
+  "sources": {
+    "benchmark": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\02_benchmark_v0_1\\benchmark_region_evidence_v0_1.csv",
+    "observability_masks": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\08_nature_experiment_plan\\observability_masks_v1.csv",
+    "exposure_translation": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\08_nature_experiment_plan\\multi_region_exposure_translation_v1.csv",
+    "osm_summary": "C:\\Users\\\u5218\u5b50\u8f69\\Desktop\\nature\\03_exposure_closure\\chao_phraya_osm_exposure_censoring\\chao_phraya_osm_exposure_censoring_summary.csv"
+  },
+  "regions": [
+    "Po",
+    "Chao Phraya",
+    "Indus",
+    "Rhone",
+    "Brantas",
+    "Rhine"
+  ]
+}

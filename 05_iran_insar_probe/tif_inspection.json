@@ -1,0 +1,139 @@
+[
+  {
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_rate_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.tif",
+    "shape": [
+      17945,
+      24060
+    ],
+    "dtype": "float32",
+    "tags": {
+      "ImageWidth": 24060,
+      "ImageLength": 17945,
+      "ModelPixelScaleTag": [
+        0.0008333300000000002,
+        0.0008333300000000001,
+        0.0
+      ],
+      "ModelTiepointTag": [
+        0.0,
+        0.0,
+        0.0,
+        43.440819635,
+        39.951667065,
+        0.0
+      ],
+      "GeoKeyDirectoryTag": [
+        1,
+        1,
+        0,
+        7,
+        1024,
+        0,
+        1,
+        2,
+        1025,
+        0,
+        1,
+        1,
+        2048,
+        0,
+        1,
+        4326,
+        2049,
+        34737,
+        7,
+        0,
+        2054,
+        0,
+        1,
+        9102,
+        2057,
+        34736,
+        1,
+        1,
+        2059,
+        34736,
+        1,
+        0
+      ],
+      "GDAL_NODATA": "-999"
+    },
+    "stats": {
+      "finite_count": 7842872,
+      "min": 0.0,
+      "p05": 0.30000001192092896,
+      "p25": 0.8999999761581421,
+      "median": 1.7999999523162842,
+      "mean": 3.114843937838562,
+      "p75": 4.199999809265137,
+      "p95": 10.300000190734863,
+      "max": 37.0,
+      "fraction_lt_minus_5": 0.0,
+      "fraction_lt_minus_10": 0.0
+    }
+  },
+  {
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_seasonal_amplitude_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.tif",
+    "shape": [],
+    "dtype": "",
+    "tags": {},
+    "stats": {},
+    "read_error": "IndexError: index 0 out of range(0)"
+  },
+  {
+    "path": "C:\\Users\\刘子轩\\radar_outputs\\iran_insar_zenodo_probe\\Iran_subsidence_mask_2014-2020_Sentinel-1_InSAR_desc_v1.0.0.tif",
+    "shape": [
+      17945,
+      24060
+    ],
+    "dtype": "bool",
+    "tags": {
+      "ImageWidth": 24060,
+      "ImageLength": 17945,
+      "ModelPixelScaleTag": [
+        0.0008333300000000002,
+        0.0008333300000000001,
+        0.0
+      ],
+      "ModelTiepointTag": [
+        0.0,
+        0.0,
+        0.0,
+        43.440819635,
+        39.951667065,
+        0.0
+      ],
+      "GeoKeyDirectoryTag": [
+        1,
+        1,
+        0,
+        3,
+        1024,
+        0,
+        1,
+        2,
+        1025,
+        0,
+        1,
+        1,
+        2048,
+        0,
+        1,
+        4326
+      ]
+    },
+    "stats": {
+      "finite_count": 431756700,
+      "min": 0.0,
+      "p05": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "mean": 0.018165026738438568,
+      "p75": 0.0,
+      "p95": 0.0,
+      "max": 1.0,
+      "fraction_lt_minus_5": 0.0,
+      "fraction_lt_minus_10": 0.0
+    }
+  }
+]

@@ -1,0 +1,10 @@
+comparator,standard,our_current_artifact,gap_to_close
+GNSS_land_subsidence_Java,external_reference_frame_and_validation,benchmark_sign_unit_audit_v1.md + multi_region_technical_validation_v1.md,keep reference frame and sign/unit conventions explicit in a reviewer-facing appendix
+DeltaDTM,technical_validation_metrics_by_reference_and_landcover,multi_region_technical_validation_v1.md,add a publishable all-region validation appendix with per-landcover / per-region metrics
+Hidden_vulnerability_US_Atlantic,landcover_stratification_and_underestimation_claim,multi_region_stratified_control_closure_v1,move stratified controls into the main evidence stack
+Flood_threshold_communication,scenario_based_exposure_translation,area_weighted_exposure_v1.csv + risk_underestimation_v1.csv,expand the exposure table to people / buildings / infrastructure in one schema
+US_metropolises_risk,multi_city_risk_translation,all multi-region closure artifacts,consolidate into a single multi-region exposure table
+Italy_metro_risk,risk_vulnerability_rating_with_remoted_sensing,mechanism_control_table_v1.csv,keep the risk-vulnerability framing tied to explicit controls
+Indian_megacities,building_damage_risk_and_caveats,multi_region_exposure_closure_v1.csv,add scenario language and cautionary interpretation to the exposure table
+Global_subsidence_of_river_deltas,multi_delta_comparative_validation,full_all_region_hierarchical_closure_v1.md,compare regions with a frozen model family instead of a single lead case
+Satellite_based_VLM_infrastructure_monitoring,roadmap_for_end_user_monitoring,benchmark_sign_unit_audit_v1.md + multi_region_technical_validation_v1.md,keep the operational roadmap explicit and reproducible

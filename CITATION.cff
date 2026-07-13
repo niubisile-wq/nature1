@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Open InSAR observability-bias manuscript repository"
+message: "If you use this repository, please cite the Zenodo DOI for the tagged release."
+type: software
+authors:
+  - family-names: Liu
+    given-names: Zixuan
+repository-code: "https://github.com/REPLACE-USER/REPLACE-REPO"
+url: "https://github.com/REPLACE-USER/REPLACE-REPO"
+license: "CC-BY-4.0"
+version: "0.1.0"
+date-released: "2026-07-13"
