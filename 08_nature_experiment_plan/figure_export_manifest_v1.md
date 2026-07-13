@@ -16,15 +16,14 @@ This manifest names the files that should exist once figures are rendered.
 - `fig2_chao_phraya_transport_bars.svg`
 
 ### Fig. 3
-- `fig3_robustness_heatmap.svg`
-- `fig3_robustness_intervals.svg`
-- `fig3_robustness_lines.svg`
+- `fig3_exposure_translation.svg`
+- `fig3_exposure_translation.pdf`
+- `fig3_exposure_translation.tiff`
 
 ### Fig. 4
-- `fig4_visibility_waterfall.svg`
-- `fig4_regional_bias_bars.svg`
-- `fig4_missed_exposure_bars.svg`
-- `fig4_transport_exposure_bars.svg`
+- `fig4_chao_phraya_robustness_grid.svg`
+- `fig4_chao_phraya_robustness_grid.pdf`
+- `fig4_chao_phraya_robustness_grid.tiff`
 
 ### Fig. 5
 - `fig5_landcover_control.svg`

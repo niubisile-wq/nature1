@@ -17,7 +17,7 @@ This note gives a single-page view of the current experiment stack, the stronges
 | E6 | Risk underestimation | partial | risk table and closure summaries exist, not yet fully consolidated across all regions |
 | E7 | Transfer validation | partial | Japan/Iran probe evidence, frozen decision rule, frozen transfer scores, and the technical-validation package; EGMS closure still open |
 | E8 | Mechanism controls | partial | `mechanism_control_table_v1.csv`, Figure 5 control story, stratified control ladder, technical-validation package |
-| E9 | Robustness / sensitivity | complete | Chao Phraya robustness grid and bootstrap outputs |
+| E9 | Robustness / sensitivity | complete | Chao Phraya robustness grid and bootstrap outputs (`fig4_chao_phraya_robustness_grid.*`) |
 | E10 | Figures / source data | complete | Fig. 1-7, manuscript draft, source-data mirrors |
 | E11 | Repository release / DOI | partial | local release candidate exists, DOI-ready metadata exists, public DOI still pending |
 
