@@ -64,7 +64,7 @@ This matrix audits the current Nature Cities package against the working plan. I
 ### 10. Public release / DOI
 
 - Requirement: public repository release or DOI must exist if the manuscript is to be treated as fully release-complete.
-- Evidence: `11_submission_ready_v1/repository_release_candidate.md`, `11_submission_ready_v1/zenodo_metadata_v1.json`, GitHub repository, Zenodo v0.2.0 DOI `10.5281/zenodo.21341994`, Zenodo concept DOI `10.5281/zenodo.21339188`
+- Evidence: `11_submission_ready_v1/repository_release_candidate.md`, `11_submission_ready_v1/zenodo_metadata_v1.json`, GitHub repository, Zenodo v0.2.0 DOI `10.5281/zenodo.21444768`, Zenodo concept DOI `10.5281/zenodo.21444768`
 - Status: complete for release identity, but the manuscript itself still needs final polish before any submission event.
 
 ### 11. Rejection-risk controls applied

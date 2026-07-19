@@ -315,19 +315,19 @@ Science Advances
 \endbibitem
 
 %%% 18
-\bibitem[\protect\citeauthoryear{Liu}{2026}]{liu2026nature1}
+\bibitem[\protect\citeauthoryear{Liu}{2026}]{liu2026openinsar}
 \begin{botherref}
 \oauthor{\bsnm{Liu}, \binits{Z.}}:
 Open {InSAR} observability-bias manuscript repository.
 Zenodo.
 Version 0.1.0
 (2026).
-\doiurl{10.5281/zenodo.21341994}
+\doiurl{10.5281/zenodo.21444768}
 \end{botherref}
 \endbibitem
 
 %%% 19
-\bibitem[\protect\citeauthoryear{Liu and Xiong}{2026}]{github2026nature1}
+\bibitem[\protect\citeauthoryear{Liu and Xiong}{2026}]{github2026openinsar}
 \begin{botherref}
 \oauthor{\bsnm{Liu}, \binits{Z.}},
 \oauthor{\bsnm{Xiong}, \binits{W.}}:
@@ -335,7 +335,7 @@ Public {InSAR} observability-bias audit for urban subsidence exposure
   assessment: code repository.
 GitHub repository
 (2026).
-\url{https://github.com/niubisile-wq/nature1}
+\url{https://github.com/niubisile-wq/openinsar-observability-bias}
 \end{botherref}
 \endbibitem
 

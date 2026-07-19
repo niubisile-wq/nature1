@@ -1,4 +1,4 @@
-﻿# Full Manuscript Draft v3
+# Full Manuscript Draft v3
 Date: 2026-07-14
 
 ## Title
@@ -106,8 +106,8 @@ In the study assembled here, public InSAR observability is not random in the con
 For urban decision makers, the result is not just that subsidence exists, but that the public record of subsidence can hide the very places that need monitoring first. That is the monitoring-debt problem this paper identifies. In a Nature Cities framing, the value of the study is that it turns observability into an urban planning and exposure-accounting issue, rather than leaving it as a technical limitation buried in the methods.
 
 ## Data Availability
-All data supporting the findings of this study are provided in the versioned GitHub repository `https://github.com/niubisile-wq/nature1` and the archived Zenodo v0.2.0 release `https://doi.org/10.5281/zenodo.21341994`. The all-version Zenodo concept DOI is `https://doi.org/10.5281/zenodo.21339188`. The archive includes the benchmark inventories, observability masks, Chao Phraya lead-case outputs, multi-region closure tables, hierarchical model comparison files, transfer-validation scores, figure source-data files, and the release maturity matrix that maps the package to Nature and Scientific Data data-sharing expectations. Reused public datasets and external benchmark inputs are identified in the verified reference list and source-data inventory.
+All data supporting the findings of this study are provided in the versioned GitHub repository `https://github.com/niubisile-wq/openinsar-observability-bias` and the archived Zenodo v0.2.0 release `https://doi.org/10.5281/zenodo.21444768`. The all-version Zenodo concept DOI is `https://doi.org/10.5281/zenodo.21444768`. The archive includes the benchmark inventories, observability masks, Chao Phraya lead-case outputs, multi-region closure tables, hierarchical model comparison files, transfer-validation scores, figure source-data files, and the release maturity matrix that maps the package to Nature and Scientific Data data-sharing expectations. Reused public datasets and external benchmark inputs are identified in the verified reference list and source-data inventory.
 
 ## Code Availability
-The custom analysis and figure-generation scripts used to produce the results are included in the versioned GitHub repository `https://github.com/niubisile-wq/nature1` and archived with the Zenodo v0.2.0 release `https://doi.org/10.5281/zenodo.21341994`. The all-version Zenodo concept DOI is `https://doi.org/10.5281/zenodo.21339188`. The release candidate documents the exact file set and archive hash for the current version, and the release maturity matrix records which Nature / Scientific Data code and repository expectations are satisfied locally.
+The custom analysis and figure-generation scripts used to produce the results are included in the versioned GitHub repository `https://github.com/niubisile-wq/openinsar-observability-bias` and archived with the Zenodo release `https://doi.org/10.5281/zenodo.21444768`. The release candidate documents the exact file set and archive hash for the current version, and the release maturity matrix records which Nature / Scientific Data code and repository expectations are satisfied locally.
 

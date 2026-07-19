@@ -1,6 +1,6 @@
 # Open InSAR Observability-Bias Repository
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21341994.svg)](https://doi.org/10.5281/zenodo.21341994)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21444768.svg)](https://doi.org/10.5281/zenodo.21444768)
 
 This repository contains the manuscript source, reproducibility scripts, figure source data, and lightweight audit tables for the open-InSAR observability-bias study.
 
@@ -20,14 +20,14 @@ Key files:
 
 ## Release and DOI
 
-- GitHub repository: `https://github.com/niubisile-wq/nature1`
-- Zenodo archived release DOI: `10.5281/zenodo.21341994`
-- Zenodo concept DOI: `10.5281/zenodo.21339188`
+- GitHub repository: `https://github.com/niubisile-wq/openinsar-observability-bias`
+- Zenodo archived release DOI: `10.5281/zenodo.21444768`
+- Zenodo concept DOI: `10.5281/zenodo.21444768`
 
 Recommended citation:
 
 ```text
-Liu, Z. Open InSAR observability-bias manuscript repository. Zenodo. https://doi.org/10.5281/zenodo.21341994
+Liu, Z. Open InSAR observability-bias manuscript repository. Zenodo. https://doi.org/10.5281/zenodo.21444768
 ```
 
 ## What Is Included
