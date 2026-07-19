@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="398.923337pt" height="225.072pt" viewBox="0 0 398.923337 225.072" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-20T00:37:27.198143</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 225.072 
+L 398.923337 225.072 
+L 398.923337 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 99.730699 145.078035 
+Q 101.835969 144.137171 102.920503 143.652484 
+" clip-path="url(#pa907b14f3b)" style="fill: none; stroke: #9aa9b5; stroke-linecap: round"/>
+    <path d="M 99.792951 143.516765 
+L 102.920503 143.652484 
+L 100.935397 146.073094 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #9aa9b5; stroke: #9aa9b5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 174.043395 121.607857 
+Q 176.475329 120.611576 177.872678 120.039129 
+" clip-path="url(#pa907b14f3b)" style="fill: none; stroke: #9aa9b5; stroke-linecap: round"/>
+    <path d="M 174.750945 119.805074 
+L 177.872678 120.039129 
+L 175.812393 122.396083 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #9aa9b5; stroke: #9aa9b5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 249.038595 98.433937 
+Q 251.470529 97.437656 252.867878 96.865209 
+" clip-path="url(#pa907b14f3b)" style="fill: none; stroke: #9aa9b5; stroke-linecap: round"/>
+    <path d="M 249.746145 96.631154 
+L 252.867878 96.865209 
+L 250.807593 99.222163 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #9aa9b5; stroke: #9aa9b5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 33.984 141.32784 
+L 98.97984 141.32784 
+L 112.5504 130.79424 
+L 47.55456 130.79424 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #f0f7f0; stroke: #5b8f66; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 98.97984 175.03536 
+L 112.5504 164.50176 
+L 112.5504 130.79424 
+L 98.97984 141.32784 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #d5e8d7; stroke: #5b8f66; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 107.90784 118.15392 
+L 172.90368 118.15392 
+L 186.47424 107.62032 
+L 121.4784 107.62032 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #f1f7fb; stroke: #2f74b5; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 172.90368 151.86144 
+L 186.47424 141.32784 
+L 186.47424 107.62032 
+L 172.90368 118.15392 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #d4e5f3; stroke: #2f74b5; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 182.90304 94.98 
+L 247.89888 94.98 
+L 261.46944 84.4464 
+L 196.4736 84.4464 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #fbf5ea; stroke: #b77a2b; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 247.89888 128.68752 
+L 261.46944 118.15392 
+L 261.46944 84.4464 
+L 247.89888 94.98 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #ead8b9; stroke: #b77a2b; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 257.89824 71.80608 
+L 322.89408 71.80608 
+L 336.46464 61.27248 
+L 271.4688 61.27248 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #fff3ef; stroke: #c94b45; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 322.89408 105.5136 
+L 336.46464 94.98 
+L 336.46464 61.27248 
+L 322.89408 71.80608 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #efd2cd; stroke: #c94b45; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 47.764949 54.95232 
+Q 177.367277 54.95232 305.627965 54.95232 
+" clip-path="url(#pa907b14f3b)" style="fill: none; stroke: #111111; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 301.227965 52.75232 
+L 305.627965 54.95232 
+L 301.227965 57.15232 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #111111; stroke: #111111; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #23313d" x="14.3424" y="27.132872" transform="rotate(-0 14.3424 27.132872)">External evidence hierarchy for bounded workflow claims</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #66788a" x="14.3424" y="41.789861" transform="rotate(-0 14.3424 41.789861)">Completed checks support workflow behavior; unavailable strong-subsidence EGMS closure remains a future benchmark.</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 33.984 175.03536 
+L 98.97984 175.03536 
+L 98.97984 141.32784 
+L 33.984 141.32784 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #e8f2e8; stroke: #5b8f66; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 107.90784 151.86144 
+L 172.90368 151.86144 
+L 172.90368 118.15392 
+L 107.90784 118.15392 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #e7f0f6; stroke: #2f74b5; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 182.90304 128.68752 
+L 247.89888 128.68752 
+L 247.89888 94.98 
+L 182.90304 94.98 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #f6eedf; stroke: #b77a2b; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 257.89824 105.5136 
+L 322.89408 105.5136 
+L 322.89408 71.80608 
+L 257.89824 71.80608 
+z
+" clip-path="url(#pa907b14f3b)" style="fill: #faebe6; stroke: #c94b45; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #111111" x="45.76896" y="48.128237" transform="rotate(-0 45.76896 48.128237)">bounded workflow evidence</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 6.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #111111" x="308.9664" y="48.091909" transform="rotate(-0 308.9664 48.091909)">dense independent validation target</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 6.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #66788a" x="185.76" y="213.71604" transform="rotate(-0 185.76 213.71604)">Interpretation boundary: no completed check is treated as dense site-level validation of every hidden cell.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #23313d" x="39.69792" y="152.307349" transform="rotate(-0 39.69792 152.307349)">DWR/TRE-GHSL</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #66788a" x="39.69792" y="161.760506" transform="rotate(-0 39.69792 161.760506)">positive-control check</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 5.45px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #5b8f66" x="93.26592" y="169.746397" transform="rotate(-0 93.26592 169.746397)">complete</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #23313d" x="113.62176" y="129.218741" transform="rotate(-0 113.62176 129.218741)">Cyprus EGMS</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #66788a" x="113.62176" y="138.586586" transform="rotate(-0 113.62176 138.586586)">near-zero boundary</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 5.45px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #2f74b5" x="167.18976" y="146.572477" transform="rotate(-0 167.18976 146.572477)">pipeline proven</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #23313d" x="188.61696" y="105.959509" transform="rotate(-0 188.61696 105.959509)">Po non-EGMS</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #66788a" x="188.61696" y="115.412666" transform="rotate(-0 188.61696 115.412666)">exposure closure</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 5.45px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #b77a2b" x="242.18496" y="123.398557" transform="rotate(-0 242.18496 123.398557)">bounded support</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #23313d" x="263.61216" y="82.785589" transform="rotate(-0 263.61216 82.785589)">Po/Rhone EGMS</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #66788a" x="263.61216" y="92.238746" transform="rotate(-0 263.61216 92.238746)">closure absent</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 5.45px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #c94b45" x="317.18016" y="100.224637" transform="rotate(-0 317.18016 100.224637)">future benchmark</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa907b14f3b">
+   <rect x="7.2" y="7.2" width="357.12" height="210.672"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,17 @@
+panel,region,estimate,low,high,n_cells,anchor
+A,Rhine,0.810149,0.544942,1.26623,9011.0,sparse_gnss_anchor
+A,Po,1.32894,1.129,1.55664,2255.0,sparse_gnss_anchor
+A,Brantas,1.59171,1.01473,2.69633,1320.0,weak_or_missing_gnss_anchor
+A,Rhone,1.59178,1.23975,2.07457,3392.0,sparse_gnss_anchor
+A,Indus,3.3894,2.32898,4.86955,7087.0,weak_or_missing_gnss_anchor
+A,Chao Phraya,3.56187,2.25134,5.78079,18077.0,sparse_gnss_anchor
+B,without Indus,1.5449679104690053,1.0961680158110028,2.177518236210341,,leave-one-out
+B,without Chao Phraya,1.562220555655902,1.0799641544552874,2.2598278419201727,,leave-one-out
+B,without Brantas,1.8068303624205668,1.1679612674236133,2.795157724507632,,leave-one-out
+B,without Rhone,1.819428857341335,1.0957389065697634,3.021085905664732,,leave-one-out
+B,without Po,1.896379515343537,1.1445852185829055,3.141972487349662,,leave-one-out
+B,without Rhine,2.0471147011437973,1.3840202562499095,3.0279026486172733,,leave-one-out
+C,fresno_control annual_rate_2025_2026,1.0,,,2.0,DWR/NGL sign concordance
+C,fresno_control total_2015_2026,1.0,,,2.0,DWR/NGL sign concordance
+C,tulare_corcoran_pilot annual_rate_2025_2026,1.0,,,1.0,DWR/NGL sign concordance
+C,tulare_corcoran_pilot total_2015_2026,1.0,,,1.0,DWR/NGL sign concordance

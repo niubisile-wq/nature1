@@ -1,0 +1,81 @@
+{
+  "package_root": ".",
+  "report_note": "Paths are relative to the strengthened package root.",
+  "targets": [
+    {
+      "aoi_id": "po_delta_core",
+      "query_kind": "l3_ortho_up",
+      "bbox_lonlat": [
+        11.7,
+        44.35,
+        12.9,
+        45.55
+      ],
+      "folder": "egms_priority_downloads_v1\\po_delta_core\\l3_ortho_up",
+      "file_count": 1,
+      "files": [
+        {
+          "path": "egms_priority_downloads_v1\\po_delta_core\\l3_ortho_up\\DOWNLOAD_HERE.txt",
+          "bytes": 243,
+          "suffix": ".txt",
+          "status": "placeholder",
+          "header": [],
+          "coord_hint_columns": [],
+          "velocity_hint_columns": [],
+          "note": "Instruction file only; replace by adding a downloaded EGMS point product in the same folder."
+        }
+      ],
+      "ready_candidates": []
+    },
+    {
+      "aoi_id": "po_venice_broad",
+      "query_kind": "l3_ortho_up",
+      "bbox_lonlat": [
+        10.0,
+        44.0,
+        13.0,
+        46.0
+      ],
+      "folder": "egms_priority_downloads_v1\\po_venice_broad\\l3_ortho_up",
+      "file_count": 1,
+      "files": [
+        {
+          "path": "egms_priority_downloads_v1\\po_venice_broad\\l3_ortho_up\\DOWNLOAD_HERE.txt",
+          "bytes": 243,
+          "suffix": ".txt",
+          "status": "placeholder",
+          "header": [],
+          "coord_hint_columns": [],
+          "velocity_hint_columns": [],
+          "note": "Instruction file only; replace by adding a downloaded EGMS point product in the same folder."
+        }
+      ],
+      "ready_candidates": []
+    },
+    {
+      "aoi_id": "rhone_delta_core",
+      "query_kind": "l3_ortho_up",
+      "bbox_lonlat": [
+        4.0,
+        43.2,
+        5.15,
+        44.05
+      ],
+      "folder": "egms_priority_downloads_v1\\rhone_delta_core\\l3_ortho_up",
+      "file_count": 1,
+      "files": [
+        {
+          "path": "egms_priority_downloads_v1\\rhone_delta_core\\l3_ortho_up\\DOWNLOAD_HERE.txt",
+          "bytes": 244,
+          "suffix": ".txt",
+          "status": "placeholder",
+          "header": [],
+          "coord_hint_columns": [],
+          "velocity_hint_columns": [],
+          "note": "Instruction file only; replace by adding a downloaded EGMS point product in the same folder."
+        }
+      ],
+      "ready_candidates": []
+    }
+  ]
+}

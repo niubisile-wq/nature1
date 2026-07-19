@@ -1,0 +1,735 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{41}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{Ao et~al.}{2024}]{ao2024national}
+\begin{barticle}
+\bauthor{\bsnm{Ao}, \binits{Z.}},
+\bauthor{\bsnm{Hu}, \binits{X.}},
+\bauthor{\bsnm{Tao}, \binits{S.}},
+\bauthor{\bsnm{Hu}, \binits{X.}}, \betal:
+\batitle{A national-scale assessment of land subsidence in china's major
+  cities}.
+\bjtitle{Science}
+(\byear{2024})
+\doiurl{10.1126/science.adl4366}
+\end{barticle}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{Berardino et~al.}{2002}]{berardino2002sbas}
+\begin{barticle}
+\bauthor{\bsnm{Berardino}, \binits{P.}},
+\bauthor{\bsnm{Fornaro}, \binits{G.}},
+\bauthor{\bsnm{Lanari}, \binits{R.}},
+\bauthor{\bsnm{Sansosti}, \binits{E.}}:
+\batitle{A new algorithm for surface deformation monitoring based on small
+  baseline differential {SAR} interferograms}.
+\bjtitle{IEEE Transactions on Geoscience and Remote Sensing}
+\bvolume{40}(\bissue{11}),
+\bfpage{2375}--\blpage{2383}
+(\byear{2002})
+\doiurl{10.1109/TGRS.2002.803792}
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{Bamler and Hartl}{1998}]{bamler1998insar}
+\begin{barticle}
+\bauthor{\bsnm{Bamler}, \binits{R.}},
+\bauthor{\bsnm{Hartl}, \binits{P.}}:
+\batitle{Synthetic aperture radar interferometry}.
+\bjtitle{Inverse Problems}
+\bvolume{14}(\bissue{4}),
+\bfpage{1}--\blpage{54}
+(\byear{1998})
+\doiurl{10.1088/0266-5611/14/4/001}
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Buergmann et~al.}{2000}]{burgmann2000insar}
+\begin{barticle}
+\bauthor{\bsnm{Buergmann}, \binits{R.}},
+\bauthor{\bsnm{Rosen}, \binits{P.A.}},
+\bauthor{\bsnm{Fielding}, \binits{E.J.}}:
+\batitle{Synthetic aperture radar interferometry to measure earth's surface
+  deformation}.
+\bjtitle{Annual Review of Earth and Planetary Sciences}
+\bvolume{28},
+\bfpage{169}--\blpage{209}
+(\byear{2000})
+\doiurl{10.1146/annurev.earth.28.1.169}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{Cenni
+  et~al.}{2021}]{cenni2021po_delta_geodetic}
+\begin{barticle}
+\bauthor{\bsnm{Cenni}, \binits{N.}},
+\bauthor{\bsnm{Fiaschi}, \binits{S.}},
+\bauthor{\bsnm{Fabris}, \binits{M.}}:
+\batitle{Monitoring of land subsidence in the po river delta (northern italy)
+  using geodetic networks}.
+\bjtitle{Remote Sensing}
+\bvolume{13}(\bissue{8}),
+\bfpage{1488}
+(\byear{2021})
+\doiurl{10.3390/rs13081488}
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Crosetto
+  et~al.}{2016}]{crosetto2016psi_review}
+\begin{barticle}
+\bauthor{\bsnm{Crosetto}, \binits{M.}},
+\bauthor{\bsnm{Monserrat}, \binits{O.}},
+\bauthor{\bsnm{Cuevas-Gonzalez}, \binits{M.}},
+\bauthor{\bsnm{Devanthery}, \binits{N.}},
+\bauthor{\bsnm{Crippa}, \binits{B.}}:
+\batitle{Persistent scatterer interferometry: A review}.
+\bjtitle{ISPRS Journal of Photogrammetry and Remote Sensing}
+\bvolume{115},
+\bfpage{78}--\blpage{89}
+(\byear{2016})
+\doiurl{10.1016/j.isprsjprs.2015.10.011}
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{Cigna and Tapete}{2021}]{cigna2021mexicocity}
+\begin{barticle}
+\bauthor{\bsnm{Cigna}, \binits{F.}},
+\bauthor{\bsnm{Tapete}, \binits{D.}}:
+\batitle{Present-day land subsidence rates, surface faulting hazard and risk in
+  mexico city with 2014--2020 sentinel-1 {IW} {InSAR}}.
+\bjtitle{Remote Sensing of Environment}
+\bvolume{253},
+\bfpage{112161}
+(\byear{2021})
+\doiurl{10.1016/j.rse.2020.112161}
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Ferretti et~al.}{2011}]{ferretti2011squeeSAR}
+\begin{barticle}
+\bauthor{\bsnm{Ferretti}, \binits{A.}},
+\bauthor{\bsnm{Fumagalli}, \binits{A.}},
+\bauthor{\bsnm{Novali}, \binits{F.}},
+\bauthor{\bsnm{Prati}, \binits{C.}},
+\bauthor{\bsnm{Rocca}, \binits{F.}},
+\bauthor{\bsnm{Rucci}, \binits{A.}}:
+\batitle{A new algorithm for processing interferometric data-stacks:
+  {SqueeSAR}}.
+\bjtitle{IEEE Transactions on Geoscience and Remote Sensing}
+\bvolume{49}(\bissue{9}),
+\bfpage{3460}--\blpage{3470}
+(\byear{2011})
+\doiurl{10.1109/TGRS.2011.2124465}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Fang et~al.}{2022}]{fang2022subsidencecontrol}
+\begin{barticle}
+\bauthor{\bsnm{Fang}, \binits{J.}},
+\bauthor{\bsnm{Nicholls}, \binits{R.J.}},
+\bauthor{\bsnm{Brown}, \binits{S.}},
+\bauthor{\bsnm{Lincke}, \binits{D.}}, \betal:
+\batitle{Benefits of subsidence control for coastal flooding in china}.
+\bjtitle{Nature Communications}
+\bvolume{13},
+\bfpage{6946}
+(\byear{2022})
+\doiurl{10.1038/s41467-022-34525-w}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Ferretti et~al.}{2001}]{ferretti2001ps}
+\begin{barticle}
+\bauthor{\bsnm{Ferretti}, \binits{A.}},
+\bauthor{\bsnm{Prati}, \binits{C.}},
+\bauthor{\bsnm{Rocca}, \binits{F.}}:
+\batitle{Permanent scatterers in {SAR} interferometry}.
+\bjtitle{IEEE Transactions on Geoscience and Remote Sensing}
+\bvolume{39}(\bissue{1}),
+\bfpage{8}--\blpage{21}
+(\byear{2001})
+\doiurl{10.1109/36.898661}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Fotheringham and
+  Wong}{1991}]{fotheringham1991maup}
+\begin{barticle}
+\bauthor{\bsnm{Fotheringham}, \binits{A.S.}},
+\bauthor{\bsnm{Wong}, \binits{D.W.S.}}:
+\batitle{The modifiable areal unit problem in multivariate statistical
+  analysis}.
+\bjtitle{Environment and Planning A}
+\bvolume{23}(\bissue{7}),
+\bfpage{1025}--\blpage{1044}
+(\byear{1991})
+\doiurl{10.1068/a231025}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Gogoi et~al.}{2025}]{gogoi2025india_review}
+\begin{botherref}
+\oauthor{\bsnm{Gogoi}, \binits{A.}},
+\oauthor{\bsnm{Kothyari}, \binits{G.C.}},
+\oauthor{\bsnm{Patidar}, \binits{A.K.}}:
+Ground subsidence monitoring in india using {InSAR}: A review of current status
+  and future prospects.
+Geosystems and Geoenvironment,
+100436
+(2025)
+\doiurl{10.1016/j.geogeo.2025.100436}
+\end{botherref}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Goodchild}{1992}]{goodchild1992giscience}
+\begin{barticle}
+\bauthor{\bsnm{Goodchild}, \binits{M.F.}}:
+\batitle{Geographical information science}.
+\bjtitle{International Journal of Geographical Information Systems}
+\bvolume{6}(\bissue{1}),
+\bfpage{31}--\blpage{45}
+(\byear{1992})
+\doiurl{10.1080/02693799208901893}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Hakim et~al.}{2020}]{hakim2020jakarta}
+\begin{barticle}
+\bauthor{\bsnm{Hakim}, \binits{W.L.}},
+\bauthor{\bsnm{Achmad}, \binits{A.R.}},
+\bauthor{\bsnm{Eom}, \binits{J.}},
+\bauthor{\bsnm{Lee}, \binits{C.-W.}}:
+\batitle{Land subsidence measurement of jakarta coastal area using time series
+  interferometry with {Sentinel-1} {SAR} data}.
+\bjtitle{Journal of Coastal Research}
+\bvolume{102},
+\bfpage{75}--\blpage{81}
+(\byear{2020})
+\doiurl{10.2112/SI102-010.1}
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Herrera-Garcia
+  et~al.}{2021}]{herrera2021global}
+\begin{barticle}
+\bauthor{\bsnm{Herrera-Garcia}, \binits{G.}},
+\bauthor{\bsnm{Ezquerro}, \binits{P.}},
+\bauthor{\bsnm{Tomas}, \binits{R.}}, \betal:
+\batitle{Mapping the global threat of land subsidence}.
+\bjtitle{Science}
+\bvolume{371},
+\bfpage{34}--\blpage{36}
+(\byear{2021})
+\doiurl{10.1126/science.abb8549}
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Haghshenas~Haghighi and
+  Motagh}{2024}]{haghshenas2024iran}
+\begin{botherref}
+\oauthor{\bsnm{Haghshenas~Haghighi}, \binits{M.}},
+\oauthor{\bsnm{Motagh}, \binits{M.}}:
+Uncovering the impacts of depleting aquifers: A remote sensing analysis of land
+  subsidence in iran.
+Science Advances
+\textbf{10}
+(2024)
+\doiurl{10.1126/sciadv.adk3039}
+\end{botherref}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Huning
+  et~al.}{2024}]{huning2024globalsubsidence}
+\begin{barticle}
+\bauthor{\bsnm{Huning}, \binits{L.S.}},
+\bauthor{\bsnm{Love}, \binits{C.A.}},
+\bauthor{\bsnm{Anjileli}, \binits{H.}}, \betal:
+\batitle{Global land subsidence: Impact of climate extremes and human
+  activities}.
+\bjtitle{Reviews of Geophysics}
+\bvolume{62},
+\bfpage{2023}--\blpage{000817}
+(\byear{2024})
+\doiurl{10.1029/2023RG000817}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Liu}{2026}]{liu2026nature1}
+\begin{botherref}
+\oauthor{\bsnm{Liu}, \binits{Z.}}:
+Open {InSAR} observability-bias manuscript repository.
+Zenodo.
+Version 0.1.0
+(2026).
+\doiurl{10.5281/zenodo.21341994}
+\end{botherref}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Liu and Xiong}{2026}]{github2026nature1}
+\begin{botherref}
+\oauthor{\bsnm{Liu}, \binits{Z.}},
+\oauthor{\bsnm{Xiong}, \binits{W.}}:
+Public {InSAR} observability-bias audit for urban subsidence exposure
+  assessment: code repository.
+GitHub repository
+(2026).
+\url{https://github.com/niubisile-wq/nature1}
+\end{botherref}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Massonnet and
+  Feigl}{1998}]{massonnet1998insar}
+\begin{barticle}
+\bauthor{\bsnm{Massonnet}, \binits{D.}},
+\bauthor{\bsnm{Feigl}, \binits{K.L.}}:
+\batitle{Radar interferometry and its application to changes in the earth's
+  surface}.
+\bjtitle{Reviews of Geophysics}
+\bvolume{36}(\bissue{4}),
+\bfpage{441}--\blpage{500}
+(\byear{1998})
+\doiurl{10.1029/97RG03139}
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{Marfai and King}{2007}]{marfai2007semarang}
+\begin{barticle}
+\bauthor{\bsnm{Marfai}, \binits{M.A.}},
+\bauthor{\bsnm{King}, \binits{L.}}:
+\batitle{Monitoring land subsidence in semarang, indonesia}.
+\bjtitle{Environmental Geology}
+\bvolume{53}(\bissue{3}),
+\bfpage{651}--\blpage{659}
+(\byear{2007})
+\doiurl{10.1007/s00254-007-0680-3}
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{Morishita et~al.}{2020}]{morishita2020licsbas}
+\begin{barticle}
+\bauthor{\bsnm{Morishita}, \binits{Y.}},
+\bauthor{\bsnm{Lazecky}, \binits{M.}},
+\bauthor{\bsnm{Wright}, \binits{T.J.}},
+\bauthor{\bsnm{Weiss}, \binits{J.R.}},
+\bauthor{\bsnm{Elliott}, \binits{J.R.}},
+\bauthor{\bsnm{Hooper}, \binits{A.}}:
+\batitle{{LiCSBAS}: An open-source {InSAR} time series analysis package
+  integrated with the {LiCSAR} automated {Sentinel-1} {InSAR} processor}.
+\bjtitle{Remote Sensing}
+\bvolume{12}(\bissue{3}),
+\bfpage{424}
+(\byear{2020})
+\doiurl{10.3390/rs12030424}
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{Morishita}{2021}]{morishita2021japan}
+\begin{barticle}
+\bauthor{\bsnm{Morishita}, \binits{Y.}}:
+\batitle{Nationwide urban ground deformation monitoring in japan using
+  {Sentinel-1} {LiCSAR} products and {LiCSBAS}}.
+\bjtitle{Progress in Earth and Planetary Science}
+\bvolume{8},
+\bfpage{6}
+(\byear{2021})
+\doiurl{10.1186/s40645-020-00402-7}
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{Motagh et~al.}{2008}]{motagh2008iran}
+\begin{barticle}
+\bauthor{\bsnm{Motagh}, \binits{M.}},
+\bauthor{\bsnm{Walter}, \binits{T.R.}},
+\bauthor{\bsnm{Sharifi}, \binits{M.A.}},
+\bauthor{\bsnm{Fielding}, \binits{E.}},
+\bauthor{\bsnm{Schenk}, \binits{A.}},
+\bauthor{\bsnm{Anderssohn}, \binits{J.}},
+\bauthor{\bsnm{Zschau}, \binits{J.}}:
+\batitle{Land subsidence in iran caused by widespread water reservoir
+  overexploitation}.
+\bjtitle{Geophysical Research Letters}
+\bvolume{35},
+\bfpage{16403}
+(\byear{2008})
+\doiurl{10.1029/2008GL033814}
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem[\protect\citeauthoryear{Orhan et~al.}{2021}]{orhan2021karapinar}
+\begin{barticle}
+\bauthor{\bsnm{Orhan}, \binits{O.}},
+\bauthor{\bsnm{Oliver-Cabrera}, \binits{T.}},
+\bauthor{\bsnm{Wdowinski}, \binits{S.}},
+\bauthor{\bsnm{Yalvac}, \binits{S.}},
+\bauthor{\bsnm{Yakar}, \binits{M.}}:
+\batitle{Land subsidence and its relations with sinkhole activity in karapinar
+  region, turkey: a multi-sensor {InSAR} time series study}.
+\bjtitle{Sensors}
+\bvolume{21}(\bissue{3}),
+\bfpage{774}
+(\byear{2021})
+\doiurl{10.3390/s21030774}
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem[\protect\citeauthoryear{Openshaw}{1984}]{openshaw1984maup}
+\begin{bbook}
+\bauthor{\bsnm{Openshaw}, \binits{S.}}:
+\bbtitle{The Modifiable Areal Unit Problem}.
+\bsertitle{Concepts and Techniques in Modern Geography},
+vol. \bseriesno{38}.
+\bpublisher{Geo Books},
+\blocation{Norwich}
+(\byear{1984})
+\end{bbook}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{Ohenhen
+  et~al.}{2024}]{ohenhen2024disappearing}
+\begin{barticle}
+\bauthor{\bsnm{Ohenhen}, \binits{L.O.}},
+\bauthor{\bsnm{Shirzaei}, \binits{M.}},
+\bauthor{\bsnm{Ojha}, \binits{C.}}, \betal:
+\batitle{Disappearing cities on us coasts}.
+\bjtitle{Nature}
+\bvolume{627},
+\bfpage{108}--\blpage{115}
+(\byear{2024})
+\doiurl{10.1038/s41586-024-07038-3}
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{Ohenhen et~al.}{2023}]{ohenhen2023atlantic}
+\begin{barticle}
+\bauthor{\bsnm{Ohenhen}, \binits{L.O.}},
+\bauthor{\bsnm{Shirzaei}, \binits{M.}},
+\bauthor{\bsnm{Ojha}, \binits{C.}},
+\bauthor{\bsnm{Kirwan}, \binits{M.L.}}:
+\batitle{Hidden vulnerability of us atlantic coast to sea-level rise due to
+  vertical land motion}.
+\bjtitle{Nature Communications}
+\bvolume{14},
+\bfpage{2038}
+(\byear{2023})
+\doiurl{10.1038/s41467-023-37853-7}
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{Ohenhen
+  et~al.}{2025}]{ohenhen2025infrastructure}
+\begin{barticle}
+\bauthor{\bsnm{Ohenhen}, \binits{L.O.}},
+\bauthor{\bsnm{Zhai}, \binits{G.}},
+\bauthor{\bsnm{Shirzaei}, \binits{M.}}, \betal:
+\batitle{Land subsidence risk to infrastructure in us metropolises}.
+\bjtitle{Nature Cities}
+\bvolume{2},
+\bfpage{543}--\blpage{554}
+(\byear{2025})
+\doiurl{10.1038/s44284-025-00240-y}
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem[\protect\citeauthoryear{Peng}{2011}]{peng2011reproducible}
+\begin{barticle}
+\bauthor{\bsnm{Peng}, \binits{R.D.}}:
+\batitle{Reproducible research in computational science}.
+\bjtitle{Science}
+\bvolume{334}(\bissue{6060}),
+\bfpage{1226}--\blpage{1227}
+(\byear{2011})
+\doiurl{10.1126/science.1213847}
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem[\protect\citeauthoryear{Pesaresi et~al.}{2024}]{pesaresi2024ghsl}
+\begin{barticle}
+\bauthor{\bsnm{Pesaresi}, \binits{M.}},
+\bauthor{\bsnm{Schiavina}, \binits{M.}},
+\bauthor{\bsnm{Politis}, \binits{P.}},
+\bauthor{\bsnm{Freire}, \binits{S.}},
+\bauthor{\bsnm{Krasnodebska}, \binits{K.}},
+\bauthor{\bsnm{Uhl}, \binits{J.H.}},
+\bauthor{\bsnm{Carioli}, \binits{A.}},
+\bauthor{\bsnm{Corbane}, \binits{C.}},
+\bauthor{\bsnm{Dijkstra}, \binits{L.}},
+\bauthor{\bsnm{Florio}, \binits{P.}}, \betal:
+\batitle{Advances on the global human settlement layer by joint assessment of
+  earth observation and population survey data}.
+\bjtitle{International Journal of Digital Earth}
+\bvolume{17}(\bissue{1}),
+\bfpage{2390454}
+(\byear{2024})
+\doiurl{10.1080/17538947.2024.2390454}
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem[\protect\citeauthoryear{Raucoules
+  et~al.}{2007}]{raucoules2007ground_subsidence}
+\begin{barticle}
+\bauthor{\bsnm{Raucoules}, \binits{D.}},
+\bauthor{\bsnm{Colesanti}, \binits{C.}},
+\bauthor{\bsnm{Carnec}, \binits{C.}}:
+\batitle{Use of {SAR} interferometry for detecting and assessing ground
+  subsidence}.
+\bjtitle{Comptes Rendus Geoscience}
+\bvolume{339}(\bissue{5}),
+\bfpage{289}--\blpage{302}
+(\byear{2007})
+\doiurl{10.1016/j.crte.2007.02.002}
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem[\protect\citeauthoryear{Raspini
+  et~al.}{2022}]{raspini2022subsidence_review}
+\begin{barticle}
+\bauthor{\bsnm{Raspini}, \binits{F.}},
+\bauthor{\bsnm{Caleca}, \binits{F.}},
+\bauthor{\bsnm{Del~Soldato}, \binits{M.}},
+\bauthor{\bsnm{Festa}, \binits{D.}},
+\bauthor{\bsnm{Confuorto}, \binits{P.}},
+\bauthor{\bsnm{Bianchini}, \binits{S.}}:
+\batitle{Review of satellite radar interferometry for subsidence analysis}.
+\bjtitle{Earth-Science Reviews}
+\bvolume{235},
+\bfpage{104239}
+(\byear{2022})
+\doiurl{10.1016/j.earscirev.2022.104239}
+\end{barticle}
+\endbibitem
+
+%%% 34
+\bibitem[\protect\citeauthoryear{Rosen et~al.}{2000}]{rosen2000insar}
+\begin{barticle}
+\bauthor{\bsnm{Rosen}, \binits{P.A.}},
+\bauthor{\bsnm{Hensley}, \binits{S.}},
+\bauthor{\bsnm{Joughin}, \binits{I.R.}},
+\bauthor{\bsnm{Li}, \binits{F.K.}},
+\bauthor{\bsnm{Madsen}, \binits{S.N.}},
+\bauthor{\bsnm{Rodriguez}, \binits{E.}},
+\bauthor{\bsnm{Goldstein}, \binits{R.M.}}:
+\batitle{Synthetic aperture radar interferometry}.
+\bjtitle{Proceedings of the IEEE}
+\bvolume{88}(\bissue{3}),
+\bfpage{333}--\blpage{382}
+(\byear{2000})
+\doiurl{10.1109/5.838084}
+\end{barticle}
+\endbibitem
+
+%%% 35
+\bibitem[\protect\citeauthoryear{Sadhasivam
+  et~al.}{2025}]{sadhasivam2025megacities}
+\begin{barticle}
+\bauthor{\bsnm{Sadhasivam}, \binits{N.}},
+\bauthor{\bsnm{Ohenhen}, \binits{L.}},
+\bauthor{\bsnm{Khorrami}, \binits{M.}}, \betal:
+\batitle{Building damage risk in sinking indian megacities}.
+\bjtitle{Nature Sustainability}
+\bvolume{8},
+\bfpage{1467}--\blpage{1479}
+(\byear{2025})
+\doiurl{10.1038/s41893-025-01663-0}
+\end{barticle}
+\endbibitem
+
+%%% 36
+\bibitem[\protect\citeauthoryear{Tomas et~al.}{2011}]{tomas2011vegamedia}
+\begin{barticle}
+\bauthor{\bsnm{Tomas}, \binits{R.}},
+\bauthor{\bsnm{Herrera}, \binits{G.}},
+\bauthor{\bsnm{Cooksley}, \binits{G.}},
+\bauthor{\bsnm{Mulas}, \binits{J.}}:
+\batitle{Persistent scatterer interferometry subsidence data exploitation using
+  spatial tools: The vega media of the segura river basin case study}.
+\bjtitle{Journal of Hydrology}
+\bvolume{400}(\bissue{3-4}),
+\bfpage{411}--\blpage{428}
+(\byear{2011})
+\doiurl{10.1016/j.jhydrol.2011.01.057}
+\end{barticle}
+\endbibitem
+
+%%% 37
+\bibitem[\protect\citeauthoryear{Tomas et~al.}{2010}]{tomas2010murcia}
+\begin{barticle}
+\bauthor{\bsnm{Tomas}, \binits{R.}},
+\bauthor{\bsnm{Herrera}, \binits{G.}},
+\bauthor{\bsnm{Delgado}, \binits{J.}},
+\bauthor{\bsnm{Lopez-Sanchez}, \binits{J.M.}},
+\bauthor{\bsnm{Mallorqui}, \binits{J.J.}},
+\bauthor{\bsnm{Mulas}, \binits{J.}}:
+\batitle{A ground subsidence study based on {DInSAR} data: Calibration of soil
+  parameters and subsidence prediction in murcia city (spain)}.
+\bjtitle{Engineering Geology}
+\bvolume{111}(\bissue{1-4}),
+\bfpage{19}--\blpage{30}
+(\byear{2010})
+\doiurl{10.1016/j.enggeo.2009.11.004}
+\end{barticle}
+\endbibitem
+
+%%% 38
+\bibitem[\protect\citeauthoryear{Torres
+  et~al.}{2012}]{torres2012gmes_sentinel1}
+\begin{barticle}
+\bauthor{\bsnm{Torres}, \binits{R.}},
+\bauthor{\bsnm{Snoeij}, \binits{P.}},
+\bauthor{\bsnm{Geudtner}, \binits{D.}},
+\bauthor{\bsnm{Bibby}, \binits{D.}},
+\bauthor{\bsnm{Davidson}, \binits{M.}},
+\bauthor{\bsnm{Attema}, \binits{E.}},
+\bauthor{\bsnm{Potin}, \binits{P.}},
+\bauthor{\bsnm{Rommen}, \binits{B.}},
+\bauthor{\bsnm{Floury}, \binits{N.}},
+\bauthor{\bsnm{Brown}, \binits{M.}},
+\bauthor{\bsnm{Navas~Traver}, \binits{I.}},
+\bauthor{\bsnm{Deghaye}, \binits{P.}},
+\bauthor{\bsnm{Duesmann}, \binits{B.}},
+\bauthor{\bsnm{Rosich}, \binits{B.}},
+\bauthor{\bsnm{Miranda}, \binits{N.}},
+\bauthor{\bsnm{Bruno}, \binits{C.}},
+\bauthor{\bsnm{L'Abbate}, \binits{M.}},
+\bauthor{\bsnm{Croci}, \binits{R.}},
+\bauthor{\bsnm{Pietropaolo}, \binits{A.}},
+\bauthor{\bsnm{Huchler}, \binits{M.}},
+\bauthor{\bsnm{Rostan}, \binits{F.}}:
+\batitle{Gmes sentinel-1 mission}.
+\bjtitle{Remote Sensing of Environment}
+\bvolume{120},
+\bfpage{9}--\blpage{24}
+(\byear{2012})
+\doiurl{10.1016/j.rse.2011.05.028}
+\end{barticle}
+\endbibitem
+
+%%% 39
+\bibitem[\protect\citeauthoryear{Yunjun et~al.}{2019}]{yunjun2019mintpy}
+\begin{barticle}
+\bauthor{\bsnm{Yunjun}, \binits{Z.}},
+\bauthor{\bsnm{Fattahi}, \binits{H.}},
+\bauthor{\bsnm{Amelung}, \binits{F.}}:
+\batitle{Small baseline {InSAR} time series analysis: Unwrapping error
+  correction and noise reduction}.
+\bjtitle{Computers \& Geosciences}
+\bvolume{133},
+\bfpage{104331}
+(\byear{2019})
+\doiurl{10.1016/j.cageo.2019.104331}
+\end{barticle}
+\endbibitem
+
+%%% 40
+\bibitem[\protect\citeauthoryear{Zhang et~al.}{2019}]{zhang2019wuhan}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{Y.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Jin}, \binits{M.}},
+\bauthor{\bsnm{Jing}, \binits{Y.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Sun}, \binits{W.}},
+\bauthor{\bsnm{Wei}, \binits{J.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}}:
+\batitle{Monitoring land subsidence in wuhan city (china) using the
+  {SBAS}-{InSAR} method with radarsat-2 imagery data}.
+\bjtitle{Sensors}
+\bvolume{19}(\bissue{3}),
+\bfpage{743}
+(\byear{2019})
+\doiurl{10.3390/s19030743}
+\end{barticle}
+\endbibitem
+
+%%% 41
+\bibitem[\protect\citeauthoryear{Zebker and
+  Villasenor}{1992}]{zebker1992decorrelation}
+\begin{barticle}
+\bauthor{\bsnm{Zebker}, \binits{H.A.}},
+\bauthor{\bsnm{Villasenor}, \binits{J.}}:
+\batitle{Decorrelation in interferometric radar echoes}.
+\bjtitle{IEEE Transactions on Geoscience and Remote Sensing}
+\bvolume{30}(\bissue{5}),
+\bfpage{950}--\blpage{959}
+(\byear{1992})
+\doiurl{10.1109/36.175330}
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}

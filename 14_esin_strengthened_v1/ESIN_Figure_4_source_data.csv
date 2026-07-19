@@ -1,0 +1,7 @@
+metric,quantile,value
+Population,p05,1.64
+Population,p50,3.65
+Population,p95,5.48
+Built-up,p05,177.15
+Built-up,p50,400.5
+Built-up,p95,530.2

@@ -1,0 +1,5 @@
+class,deformation_screen,observability_class,accounting_role
+visible_exposure,D=1,O>=tau_O,product-supported exposure
+hidden_exposure_retained,D=1,O<tau_O,hidden-exposure audit account
+observable_background,D=0,O>=tau_O,not in deformation screen
+low_support_background,D=0,O<tau_O,not counted as hidden exposure

@@ -1,0 +1,6 @@
+region,evidence_role,odds_ratio,ci_low,ci_high,strong_population_not_majority_fraction,strong_builtup_not_majority_fraction,interpretation
+Chao Phraya,lead_case,5.779728,4.440083,7.523567,0.182735,0.337248,"Lead closure case with population, built-up and transport exposure translation; used as the primary workflow demonstration."
+Po,supporting_case,2.603371,1.952795,3.470686,0.340347,0.460331,"Strong-motion exposure is measurable in both population and built-up layers; this makes Po the strongest execution-ready European benchmark for EGMS follow-up, but not an independent EGMS validation by itself."
+Brantas,supporting_case,2.458831,1.867237,3.237858,0.145903,0.175993,Supporting positive regional check; infrastructure translation remains incomplete.
+Rhone,conditional_upgrade_case,1.591780,,,,"Positive regional signal in the hierarchical ladder, but exposure translation is partial; retained as an EGMS transfer target rather than a completed local exposure replication.",product_access_pending
+Rhine,control_or_specification_case,0.810149,,,,Non-reproducing/specification control; useful for showing that the workflow does not force a positive result in every European delta.,not_prioritized

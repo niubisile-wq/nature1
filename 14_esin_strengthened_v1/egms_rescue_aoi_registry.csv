@@ -1,0 +1,7 @@
+aoi_id,name,bbox_wgs84,priority,role,reason
+po_venice_broad,Po Basin and Venice,"10.0,44.0,13.0,46.0",A,EGMS benchmark for Po/Venice LiCSAR observability bias,European high-quality benchmark overlapping the Po delta and Venice subsidence literature.
+po_delta_core,Po delta core,"11.7,44.35,12.9,45.55",A,Core positive-control delta benchmark,Small AOI around the current Po-delta VLM/LiCSAR prototype for fast EGMS closure.
+netherlands_lowlands,Netherlands lowlands,"3.2,50.7,7.2,53.8",A,Independent EGMS lowland benchmark,Dense European product coverage; separates open-observability bias from purely groundwater framing.
+rhine_core,Rhine-Meuse delta core,"3.2,51.0,5.2,52.35",B,Specificity control,Current WorldCover-adjusted model weakens Rhine; EGMS can test whether this is product/land-cover confounding.
+rhone_delta_core,Rhone delta / Camargue core,"4.0,43.2,5.15,44.05",A,Land-cover mediated delta benchmark,Strong signal survives WorldCover controls; EGMS tests whether it is a real public-product observability gap.
+cyprus_sourcecoop_smoke,Cyprus Source Cooperative smoke test,"32.0,34.4,34.8,35.8",C,Cloud-native EGMS format smoke test,"Matches the public Source Cooperative sample region; useful for parser development, not a Nature benchmark."

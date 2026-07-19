@@ -1,0 +1,6 @@
+element,role,interpretation
+public_insar_valid_support,input,radar product support layer
+frozen_strong_deformation_screen,input,deformation-relevant domain
+population_and_built_up_exposure,input,exposure layer
+visible_only_workflow,comparison_path,clips support before counting exposure
+observability_aware_workflow,proposed_path,retains weak support as hidden exposure

@@ -1,0 +1,370 @@
+\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{capt-of}
+\usepackage{xurl}
+\usepackage{placeins}
+\usepackage{amsmath,amssymb}
+\emergencystretch=2em
+\raggedbottom
+
+\begin{document}
+
+\title[Auditing InSAR observability bias in exposure estimates]{Auditing observability bias in InSAR-derived subsidence exposure estimates with a reproducible geospatial workflow}
+
+\author*[1]{\fnm{Zixuan} \sur{Liu}}\email{2411621306@hbut.edu.cn}
+\author[2]{\fnm{Wei} \sur{Xiong}}
+
+\affil*[1]{\orgname{Detroit Green Technology Institute, Hubei University of Technology}, \orgaddress{\city{Wuhan}, \postcode{430068}, \country{China}}}
+\affil[2]{\orgname{School of Electrical and Electronic Engineering, Hubei University of Technology}, \orgaddress{\city{Wuhan}, \postcode{430068}, \country{China}}}
+
+\abstract{Public Interferometric Synthetic Aperture Radar (InSAR) products are increasingly used as first-line inputs for subsidence screening. Yet downstream exposure estimates often treat missing or weakly observable radar support as if it were decision-neutral. This assumption can change the exposure denominator when low-observability parts of a deformation product overlap population, built-up land or infrastructure. We present a reproducible geospatial workflow that keeps deformation relevance, radar-product observability and exposure as separate layers until the final accounting step. The workflow converts public InSAR valid-support information into an observability mask, intersects it with a frozen strong-deformation screen, and reports hidden exposure through area-weighted and native-pixel allocation instead of discarding weakly observed cells. In the Chao Phraya urban delta lead case, the area-weighted estimator retains 3.77 million people and 404.77 km$^2$ of built-up land inside not-majority-observable portions of strong-screen cells; native GHSL-pixel allocation gives 3.63 million people and 404.77 km$^2$. Threshold-surface tests, MAUP sensitivity, Monte Carlo propagation, placebo randomization and decision-ranking experiments show that the result is not explained by a single cutoff, allocation choice, reporting partition or random hidden-mask pattern. External probes are used to bound the workflow and code path rather than to claim dense site-level validation. The workflow provides an audit layer for Earth-science informatics and radar-derived exposure translation. It does not replace local geotechnical diagnosis or dense independent validation, but it makes product support visible when public deformation products are reused for screening decisions.}
+
+\keywords{InSAR, geospatial signal processing, observability bias, land subsidence, exposure estimation, SAR remote sensing, spatial data fusion}
+
+\maketitle
+
+\section{Introduction}
+
+Satellite radar interferometry is now a routine source of surface-deformation information for Earth-system monitoring, urban hazard screening and infrastructure assessment. Synthetic Aperture Radar (SAR) missions such as Sentinel-1 provide repeated coherent observations that can be transformed into displacement products \citep{bamler1998insar,rosen2000insar,torres2012gmes_sentinel1}. Reviews have established InSAR as a deformation-measurement technology across geophysical and engineering settings \citep{massonnet1998insar,burgmann2000insar}. Persistent-scatterer and small-baseline time-series methods then support monitoring applications \citep{ferretti2001ps,berardino2002sbas}. Multi-temporal InSAR algorithms broadened this monitoring capacity across point-like and distributed scatterers \citep{ferretti2011squeeSAR,yunjun2019mintpy}. Public processing chains such as LiCSBAS have moved these products beyond specialist radar groups \citep{morishita2020licsbas}, and regional public products now support studies of urban and deltaic subsidence \citep{morishita2021japan,haghshenas2024iran}. As these products enter screening workflows, the key question is how deformation layers should be translated into decision-facing exposure estimates without losing the uncertainty encoded in product support.
+
+This translation step is both a signal-processing problem and a spatial-accounting problem. InSAR products do not observe all surfaces equally. Temporal decorrelation and surface change can reduce the validity of interferometric measurements \citep{zebker1992decorrelation}. In urban and peri-urban settings, vegetation, water, construction activity, geometric effects, coherence thresholds and product-specific quality masks can further structure the valid support of a public deformation layer \citep{crosetto2016psi_review}. Applied subsidence studies show that such deformation can be spatially uneven within cities and engineered landscapes \citep{raucoules2007ground_subsidence,tomas2010murcia}. When the resulting deformation map is intersected with population, built-up land or infrastructure layers, analysts often remove cells that are not valid in the radar product before exposure is summarized. That operation is convenient, but it silently changes the exposure denominator. If missing or weakly observable radar support overlaps urban exposure, visible-only summaries can understate the amount of population or built environment that still requires monitoring or independent checking.
+
+Existing subsidence studies have established the importance of vertical land motion for cities, coasts and infrastructure. Recent work has shown that subsidence can interact with coastal exposure and urban flood risk at large scales \citep{ohenhen2023atlantic,ohenhen2024disappearing}. Other studies have highlighted infrastructure and city-scale consequences of subsidence in rapidly urbanizing regions \citep{ohenhen2025infrastructure,sadhasivam2025megacities}. Broad assessments and reviews similarly show that subsidence is a multi-region exposure problem rather than a single-city anomaly \citep{herrera2021global,raspini2022subsidence_review,huning2024globalsubsidence}. Regional reviews also show why public screening workflows are attractive where local validation data remain uneven \citep{gogoi2025india_review}. However, the information-processing layer between a public InSAR product and an exposure estimate is often less explicit than the deformation map itself. A product may correctly report many visible subsiding areas while still being incomplete for exposure translation if the unobserved part of the product is treated as empty rather than uncertain. This gap is especially relevant to open screening workflows, where public products are used before local ground control, private processing or field inspection is available.
+
+The issue is not simply that InSAR has missing data. Missingness is a normal feature of radar remote-sensing products, and experienced users usually understand that decorrelation, viewing geometry and product masks affect the final displacement field. The more specific problem considered here is that downstream exposure accounting can convert this missingness into a denominator change. Once a deformation product is clipped to valid radar support and then intersected with population or built-up layers, weakly observed locations can disappear from the exposure calculation. A visible-only estimate may therefore answer a different question from the one intended by a risk-screening user. It answers how much exposure is visible to the product under a chosen support mask, not how much exposure lies in the deformation-relevant domain that still needs attention.
+
+This distinction matters because the users of released InSAR products are often not the groups that generated the radar time series. A processing team may publish a careful product with valid-support masks, while a downstream analyst may treat the remaining raster or point layer as a complete hazard domain. The resulting error is a failure in the information chain that links measurement support, spatial aggregation and exposure accounting. That problem is related to long-standing concerns in geographic information science about how spatial support and aggregation shape inference \citep{goodchild1992giscience,openshaw1984maup}. Existing quality masks, coherence thresholds, uncertainty indicators and sensitivity analyses reduce parts of this risk, but they rarely audit whether non-observed radar support is being treated as absent, unknown or out of scope. The workflow proposed here makes that decision explicit by retaining low-observability parts of the deformation-relevant domain as a separate accounting class.
+
+We address this problem by framing public-product observability as an explicit variable in geospatial signal processing. The proposed workflow keeps radar observability, deformation-screening status and exposure separate until the final accounting step. Cells that pass a frozen strong-deformation screen but are not majority observable in the public InSAR product are retained as a hidden exposure class. This class does not assert that every hidden fragment is actively deforming. It asks a narrower and reproducible question: how much population, built-up land or infrastructure lies in the weakly observed portion of a deformation-relevant domain?
+
+This question is different from asking whether an InSAR product is accurate where it observes. A product can be technically reliable over its valid support and still be incomplete for a downstream exposure question. Conversely, an exposure table can look precise while answering only a support-conditioned question. The proposed audit focuses on that translation step. It makes the valid-support decision visible, quantifies the exposure that is lost under visible-only accounting, and records how strongly the result depends on threshold, allocation and spatial-partition choices \citep{fotheringham1991maup}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.96\linewidth]{ESIN_Figure_mechanism.pdf}
+  \caption{Mechanism of observability-driven exposure bias. A visible-only workflow clips the deformation-relevant domain to public InSAR valid support before exposure is counted, whereas the observability-aware workflow retains weakly observed exposure as a separate audit class.}
+  \label{fig:mechanism}
+\end{figure}
+
+
+The contribution is methodological and application-facing. We formalize an observability-aware exposure audit for public InSAR products and gridded exposure layers, implement it in a lead urban-delta case, and report both area-weighted and native-pixel estimates. We then test stability with threshold-surface, MAUP, Monte Carlo, placebo and decision-ranking analyses. Finally, we organize external checks as a bounded evidence ladder so that product-lineage transfer, positive controls and pending independent benchmarks are not conflated. The code and data package are treated as reproducible research outputs rather than as independent geophysical evidence \citep{peng2011reproducible,liu2026nature1,github2026nature1}.
+
+The article is therefore a methods and workflow paper rather than a regional geotechnical diagnosis. Its central claim is not that every weakly observed fragment is actively subsiding, nor that public InSAR products should be discounted. The claim is that product support should remain visible until exposure accounting, because removing it earlier can hide substantial population or built-up land from the audit trail.
+
+This framing also sets the review burden. The paper should be judged on whether the audit is logically defined, reproducible, stable under plausible implementation choices and useful for screening. It should not be judged as if it claimed dense local validation of every hidden cell. That distinction is central to the manuscript's story: the workflow improves the honesty of public-product exposure translation, while leaving site-level diagnosis to stronger geodetic and geotechnical evidence.
+
+\section{Materials and methods}
+
+\subsection{Task formulation and notation}
+
+The task is to audit whether public InSAR observability changes an exposure estimate derived from a deformation-screening product. The workflow takes four inputs: a spatial analysis grid, a public InSAR observability layer, a deformation-screening layer and one or more exposure layers such as population, built-up surface or infrastructure. It returns visible exposure, hidden exposure and sensitivity diagnostics that quantify how strongly the result depends on threshold, scale and allocation assumptions. This formulation treats observability as part of the information product, not as a preprocessing detail that disappears before exposure is calculated.
+
+The workflow is designed for situations in which the deformation layer is already available and the main uncertainty lies in exposure translation. It is therefore downstream of SAR focusing, interferogram generation, phase unwrapping, time-series inversion and product calibration. The method does not estimate a new velocity field or repair missing phase histories. It asks whether public product support is spatially aligned with the exposure that an analyst intends to summarize.
+
+The audit is considered successful only under bounded conditions. First, the hidden-exposure class must be defined before exposure is counted. Second, the result must remain material under nearby deformation, observability, allocation and partition choices. Third, external checks must support the workflow behavior without being promoted beyond their evidence role. These criteria align the evaluation with an informatics method rather than with a site-level geotechnical validation study.
+
+Let $i$ index grid cells in the analysis domain. Each cell carries a deformation-screening indicator $D_i$, an observability fraction $O_i$, and an exposure quantity $E_i$. A cell is deformation-relevant when $D_i=1$ under the frozen strong-deformation screen. A cell is majority observable when $O_i \geq \tau_O$, where $\tau_O$ is the observability threshold. Hidden deformation-relevant cells are those for which $D_i=1$ and $O_i<\tau_O$. This definition separates measurement support from exposure and prevents the public product mask from removing cells before the exposure denominator is known.
+
+The frozen screen prevents the audit from tuning the deformation definition after the exposure result is known. In a typical visible-only workflow, users may choose a deformation threshold, apply a validity mask and count exposure only in surviving cells. Here, the deformation screen is fixed before observability classes are assigned, and the same deformation-relevant set is partitioned into visible and hidden support. This makes the denominator explicit.
+
+For an exposure layer $E$ and a set of deformation-relevant cells $S$, hidden exposure is estimated as
+\begin{equation}
+E_{\mathrm{hidden}}=\sum_{i \in S} E_i \frac{A_i^{\mathrm{hidden}}}{A_i},
+\end{equation}
+where $A_i$ is cell area and $A_i^{\mathrm{hidden}}$ is the part of the cell classified as not majority observable. A native-pixel sensitivity repeats the allocation at the GHSL pixel level to test whether the headline result depends on area-weighted cell allocation.
+
+The area-weighted expression avoids imposing a sub-cell model of population or built-up location when the analysis grid is coarser than the exposure product. Its weakness is proportional allocation within a cell. The native-pixel sensitivity addresses that weakness on the original GHSL support. Agreement between the two estimators reduces the risk that the headline number is only a coarse-grid artifact.
+
+\subsection{Workflow architecture}
+
+The workflow has five modules (Fig.~\ref{fig:coretarget}). Module 1 harmonizes the analysis grid and source products. Module 2 derives observability masks from valid-support or product-quality information. Module 3 applies the frozen deformation screen and tags cells as visible or hidden within the deformation-relevant domain. Module 4 intersects the retained cell classes with exposure layers. Module 5 runs robustness and bounded evidence checks, including native-pixel allocation, threshold surfaces, MAUP sensitivity, Monte Carlo uncertainty propagation, placebo randomization, decision-ranking sensitivity and external-product probes.
+
+The module order is part of the method. Exposure is not counted until the deformation-relevant domain and observability classes have both been fixed. This prevents the workflow from first removing low-support cells and then reporting the remaining exposure as if the denominator had not changed. The order also makes the audit portable. A new region can use a different public deformation product or a different exposure layer, but the same questions remain: what is deformation-relevant, what is observable, what exposure is retained, and which checks bound the interpretation?
+
+Module 1 standardizes spatial support before exposure is counted. Public InSAR products, deformation screens and exposure layers can differ in coordinate reference system, resolution, footprint and data model. The harmonization step records these differences, clips inputs to the analysis domain and defines the grid for cell-level accounting.
+
+Module 2 converts product support into an observability layer. For raster products, valid pixels or quality masks are summarized inside each analysis cell. For point products, valid measurement points are overlaid with the cell grid and, where needed, with exposure pixels. The output is an observability fraction rather than a global valid/invalid label, preserving partial support inside reporting cells.
+
+Module 3 applies the frozen deformation screen after observability has been defined but before exposure is summarized. In the lead case, cells passing the strong-deformation screen are partitioned by majority observability into visible and hidden deformation-relevant cells. Non-strong or well-observed cells can be retained as controls but are not promoted to the main exposure claim.
+
+Module 4 translates cell classes into exposure quantities. The primary outputs are hidden population and hidden built-up area. Other exposure layers can be substituted, but their interpretation changes with the layer. Infrastructure assets, for example, require asset-specific assumptions before they can support an engineering-risk claim.
+
+Module 5 tests whether the headline result is fragile to plausible implementation choices. Threshold surfaces vary deformation and observability cutoffs. MAUP tests vary reporting partitions and origins. Native-pixel allocation tests whether coarse-cell allocation creates the result. Monte Carlo propagation perturbs exposure-scale and threshold assumptions. Placebo randomization tests whether hidden masks placed at random would produce similar association with strong-screen cells. Decision-ranking analysis asks whether retaining hidden exposure changes operational lists rather than only aggregate totals. External evidence probes test code paths, sign behavior and transfer settings without turning them into dense site-level validation.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.88\linewidth]{ESIN_Figure_1.pdf}
+  \caption{Cell classification used by the geospatial signal-processing workflow. Hidden exposure is counted only where a cell passes the deformation screen and is not majority observable in the public InSAR product.}
+  \label{fig:coretarget}
+\end{figure}
+
+This modular design is deliberately conservative. The workflow does not infer deformation inside every missing pixel. It preserves low-observability exposure as a separate accounting class and reports where more specialized modelling, alternative viewing geometry or local validation is worth the effort.
+
+\subsection{Study design and evidence roles}
+
+The Chao Phraya urban delta is used as the lead exposure-closure case because it has the strongest assembled population and built-up accounting stack. Supporting regional checks in Po, Brantas, Indus, Rhone and Rhine are retained with pre-defined evidence roles rather than treated as equally strong replications. Japan LiCSBAS and Iran public InSAR products are used as product-lineage extensions. External DWR/TRE and EGMS-derived checks are treated as validation probes with explicit boundaries. This evidence hierarchy is part of the method because it prevents a portability check from being interpreted as a completed independent validation.
+
+The lead-case design follows a hierarchy rather than a pooled multi-region design. Pooling all regions into one estimate would obscure which regions close the exposure account and which only test transfer, control behavior or code paths. Chao Phraya therefore carries the main quantitative exposure claim. Supporting regions test transfer, control regions test whether the audit forces positive signals, product-lineage cases test parsing across public InSAR families, and unavailable dense benchmarks remain future evidence.
+
+The reproducibility package follows the same evidence-role logic. Source-data inventories, figure source data, runbooks and gate-status files distinguish submitted results from prepared extensions. A reader who obtains additional EGMS products can run the prepared closure path, but the manuscript remains interpretable without treating that future run as completed evidence.
+
+\subsection{Exposure layers and allocation}
+
+Population and built-up exposure are derived from GHSL products and intersected with the analysis grid. GHSL provides a globally consistent public basis for population and built-up surface accounting \citep{pesaresi2024ghsl}. The primary estimator uses area-weighted allocation because it avoids assigning all exposure in a cell to a single representative point. The native-pixel sensitivity repeats the Chao Phraya estimate on the GHSL pixel support to test whether the result is an artifact of gridded allocation.
+
+GHSL layers are used because they provide consistent public support for population and built-up surface across domains. This choice fits a reproducible workflow audit rather than a locally optimized census or building inventory. The absolute values should therefore be read as public-data exposure estimates under stated allocation rules, not as official demographic counts or building-loss estimates.
+
+Area-weighted and native-pixel allocation are reported together because they answer different concerns. Area weighting is transparent at cell or polygon scale, whereas native-pixel allocation is closer to exposure-raster support. Agreement between them does not remove exposure-layer uncertainty, but it narrows one important source of implementation uncertainty.
+
+Transport and infrastructure layers are treated as sensitivity or application layers rather than the main exposure claim. Population and built-up area describe people and urban surfaces. Linear infrastructure layers describe assets whose risk depends on design, age, foundation conditions, redundancy and maintenance. Counting a road or power corridor inside a hidden-exposure class is useful for screening, but it is not a failure-probability estimate.
+
+\subsection{Robustness and bounded-evidence protocol}
+
+Robustness tests target specific failure modes rather than a single omnibus statistic. Threshold-surface analysis tests cutoff dependence. Native-pixel and MAUP sensitivities test allocation and reporting-partition artifacts. Placebo randomization tests whether the association between strong-screen cells and not-majority-observable support could arise from random hidden-mask placement. Monte Carlo propagation tests exposure-scale and threshold uncertainty. Decision-ranking analysis tests whether the audit changes operational lists rather than only aggregate totals.
+
+This design separates robustness from validation. Robustness checks ask whether the same accounting conclusion survives reasonable choices inside the workflow. Validation asks whether an independent product or local observation confirms deformation at specific locations. Both matter, but they answer different questions. The present manuscript therefore uses robustness to defend the audit logic and uses external products only to bound behavior, demonstrate code-path transfer and identify where stronger future validation would add value.
+
+The bounded-evidence protocol defines what each external check can and cannot support. DWR/TRE provides a deformation-exposure positive control, Cyprus EGMS tests the EGMS/GHSL code path in a near-zero setting, and Po provides a European transfer case with local exposure closure and sparse published geodetic context \citep{cenni2021po_delta_geodetic}. Because credentialed EGMS/CLMS access is not assumed, Po-Venice and Rhone/Camargue EGMS closures are retained as reproducible future hooks rather than as present claims.
+
+The protocol also defines an interpretation boundary for each check. A check is used only for the claim it can support: sensitivity tests bound implementation dependence, placebo tests bound random-mask explanations, controls bound code-path behavior and independent products bound transfer. None of these checks is used to infer deformation where the public product lacks support. This separation makes criticism local: a failed check would weaken the corresponding evidence role, not silently change the meaning of the hidden-exposure class.
+
+\section{Results}
+
+\subsection{The audit retained exposure that visible-only summaries would discard}
+
+The lead result is that the weakly observable portion of the deformation-relevant domain contains substantial exposure. In the Chao Phraya lead case, area-weighted accounting identified 3.77 million people and 404.77 km$^2$ of built-up land inside the not-majority-observable portions of cells that pass the frozen strong-deformation screen (Fig.~\ref{fig:chao}). These quantities are not interpreted as confirmed damage or affected population. They are the exposure retained for audit because the radar product does not majority-observe that portion of the deformation-relevant domain.
+
+The visible-only interpretation would treat the weakly observed portion of these cells as unavailable for exposure accounting. The observability-aware interpretation keeps this exposure in the ledger and labels it as hidden. It does not change the deformation product or create new measurements, but it changes the downstream exposure table used for portfolio-scale decisions.
+
+This is the central empirical result of the paper. The audit does not inflate the deformation signal by filling missing cells with predicted velocities. Instead, it changes the accounting question. A visible-only summary asks how much exposure lies inside the part of the deformation-relevant domain that the public product supports. The observability-aware summary asks how much exposure remains inside the deformation-relevant domain after weak support is made explicit. The difference between these questions is large enough in the lead case to matter for screening.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.92\linewidth]{ESIN_Figure_2.pdf}
+  \caption{Lead-case hidden exposure in the Chao Phraya urban delta. Area-weighted accounting retains population and built-up land in the weakly observable portions of deformation-relevant cells instead of dropping them from visible-only summaries.}
+  \label{fig:chao}
+\end{figure}
+
+\begin{table}[t]
+\caption{Lead-case exposure closure used in the ESIN draft.}
+\label{tab:leadclosure}
+\centering
+\begin{tabular}{p{0.22\linewidth}p{0.30\linewidth}p{0.32\linewidth}}
+\toprule
+Quantity & Area-weighted estimator & Native-pixel sensitivity \\
+\midrule
+Hidden population & 3.77 million & 3.63 million \\
+Hidden built-up area & 404.77 km$^2$ & 404.77 km$^2$ \\
+Interpretation & Exposure retained for audit & Allocation sensitivity \\
+Boundary & Not confirmed damage & Not independent truth \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The native-pixel sensitivity preserved the same conclusion. Hidden population was 3.63 million and hidden built-up area was 404.77 km$^2$ on the native GHSL support. The small population difference and identical built-up result indicate that the headline estimate is not driven by a simple mismatch between the analysis grid and exposure-raster support.
+
+The agreement also clarifies what remains uncertain. It does not turn GHSL exposure into a local census, and it does not prove that each hidden pixel is deforming. It shows that one likely implementation concern, whether exposure was allocated through an overly coarse analysis grid, does not explain the result. The remaining uncertainty is therefore about product support and exposure interpretation, not about a single gridding choice.
+
+\subsection{Sensitivity surfaces showed that the result was not a single-threshold artifact}
+
+The threshold-surface experiment evaluated 120 combinations of deformation, observability and exposure-screening assumptions. Across these combinations, hidden population ranged from 1.33 to 5.36 million and hidden built-up area ranged from 140.44 to 523.64 km$^2$ (Fig.~\ref{fig:threshold}). The absolute magnitude changed with threshold choices, but the qualitative conclusion did not: weakly observable deformation-relevant cells retained decision-relevant exposure across a broad parameter surface.
+
+The scanned surface shows that the hidden-exposure class did not collapse to zero under nearby alternatives. The result therefore supports a bounded claim: the audit exposes a persistent denominator issue across plausible choices, not a universally optimal threshold.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.92\linewidth]{ESIN_Figure_3.pdf}
+  \caption{Threshold-surface sensitivity of hidden population and built-up exposure. The experiment tests whether the lead result depends on a single deformation or observability cutoff.}
+  \label{fig:threshold}
+\end{figure}
+
+Block-size and shifted-origin MAUP sensitivity gave the same direction of evidence. Tested partitions retained the same strong hidden population fraction and built-up fraction, indicating that the signal was not created by a single reporting grid. The audit therefore behaves as a spatial-accounting property of the product-exposure intersection rather than as a numerical artifact of one grid choice.
+
+The MAUP result reduces the risk that the conclusion is an artifact of one reporting grid. It does not prove invariance to every possible spatial unit, but it shows that the retained exposure fraction did not depend on a single convenient partition.
+
+Together, the threshold and MAUP tests strengthen the workflow claim. Threshold sensitivity asks whether the result appears only under one exact definition of strong deformation or majority observability. MAUP sensitivity asks whether the result appears only under one reporting partition. The answer in both cases is no. The magnitude changes, as expected, but the hidden-exposure class remains material across the tested choices.
+
+\subsection{Uncertainty propagation bounded the exposure claim}
+
+Monte Carlo propagation with 5000 iterations produced hidden population p05, p50 and p95 values of 1.64, 3.65 and 5.48 million, respectively, and hidden built-up p05, p50 and p95 values of 177.15, 400.50 and 530.20 km$^2$ (Fig.~\ref{fig:uncertainty}). The median values aligned with the deterministic lead estimate. The lower and upper bounds quantify scenario and specification uncertainty that should travel with the result when the audit is used for screening.
+
+The uncertainty analysis is not presented as a formal posterior distribution for true exposure. It is a scenario-propagation test asking whether reasonable perturbations move the result from substantial to negligible. They do not. The intervals therefore bound screening discussions without implying product-level statistical confidence.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.92\linewidth]{ESIN_Figure_4.pdf}
+  \caption{Uncertainty propagation for hidden population and built-up exposure. The intervals quantify sensitivity to threshold and exposure-scale perturbations rather than implying a formal GHSL product-confidence interval.}
+  \label{fig:uncertainty}
+\end{figure}
+
+\begin{table}[t]
+\caption{Robustness checks and their interpretation.}
+\label{tab:robustness}
+\centering
+\begin{tabular}{p{0.22\linewidth}p{0.30\linewidth}p{0.32\linewidth}}
+\toprule
+Check & Result & Interpretation \\
+\midrule
+Threshold surface & 1.33--5.36 M people; 140.44--523.64 km$^2$ built-up & Not single-cutoff dependent \\
+Monte Carlo & 1.64/3.65/5.48 M people p05/p50/p95 & Bounded but non-zero hidden exposure \\
+Native pixel & 3.63 M people; 404.77 km$^2$ built-up & Not a cell-allocation artifact \\
+Decision ranking & 0.9365 overlap at 2000 cells & Prioritization changes at operational scale \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Observability-aware ranking changed decision lists at operational scale}
+
+A decision-ranking experiment compared visible-only and observability-aware priority lists. The first 100--250 cells were nearly identical, indicating that the audit does not perturb the most obvious hotspots. At 2000 cells, however, list overlap fell to 0.9365, and the observability-aware ranking added 572,297 hidden people and 10.83 km$^2$ of built-up land relative to the visible-only list. The result shows where the audit becomes operationally relevant: observability bias matters most when screening expands beyond the top visible hotspots into larger portfolios.
+
+This pattern matches the expected use of public InSAR products in screening. The most obvious hotspots remain high priority, but larger monitoring portfolios can omit locations where exposure remains inside the deformation-relevant domain but is weakly supported by the radar product.
+
+\enlargethispage{2\baselineskip}
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.88\linewidth]{ESIN_Figure_5.pdf}
+  \caption{Decision consequence of using visible-only versus observability-aware ranking. The curves show when hidden exposure begins to change priority lists.}
+  \label{fig:decision}
+\end{figure}
+
+\subsection{Failure-mode experiments strengthened the claim-specific audit}
+
+The workflow was also tested against failure modes that would weaken an observability-bias claim: threshold choice, exposure allocation, reporting partition, random placement of hidden masks, decision irrelevance, universal-positive bias and external-product overclaim. The checks are not interchangeable validation. They are mapped to specific alternative explanations so that robustness evidence is not mistaken for dense external validation.
+
+This mapping is important for reviewers because each criticism would weaken the manuscript in a different way. If the threshold surface collapsed, the result would be a cutoff artifact. If native-pixel allocation disagreed strongly, the result would depend on exposure allocation. If placebo randomization reproduced the association, hidden support would not be meaningfully aligned with the strong-screen class. If decision ranking did not change, the result would be a table-only accounting issue. Reporting these checks separately makes the evidence more auditable than a single aggregate robustness score.
+
+Additional MAUP, placebo, transfer, single-region-dependence and evidence-role details are reported in Supplementary Figs. S1--S3 and Supplementary Tables S1--S2.
+
+
+
+\subsection{Regional and product-lineage checks tested transfer without overclaiming validation}
+
+Supporting regions and product-lineage extensions were used to test whether the workflow can be transferred beyond the lead case. Po and Brantas provided supporting regional evidence. In the local non-EGMS regional synthesis, Po was the strongest European transfer case because population and built-up exposure translation were already available: 2,013 of 2,255 covered cells passed the strong-deformation screen, the strong versus non-strong not-majority-observable odds ratio was 2.60 (95\% CI 1.95--3.47), and the strong-cell population and built-up fractions that were not majority observable were 0.340 and 0.460, respectively (Fig.~\ref{fig:regionaltransfer}). Published Po River Delta GNSS/InSAR studies provide an independent sparse geodetic context for millimetre-scale subsidence in the same delta system \citep{cenni2021po_delta_geodetic}. Rhone was retained as a conditional upgrade case because it had a positive regional signal but only partial proxy-level exposure translation. Rhine acted as a control or specification case. Japan and Iran public InSAR products tested whether the parsing logic could be applied across product lineages \citep{motagh2008iran,morishita2021japan}. These checks support portability of the audit logic without treating unavailable EGMS products as completed evidence.
+
+The regional results are not pooled because their evidence roles differ. Po and Brantas support transfer, Rhone remains conditional because exposure translation is incomplete, and Rhine is useful because it does not behave as a strong positive case. Japan and Iran are product-lineage tests rather than geographic replications. This separation is consistent with urban subsidence studies showing that local hydrogeology, land use and infrastructure setting can strongly shape observed deformation patterns \citep{tomas2011vegamedia,cigna2021mexicocity}. It documents not only the computations but also the logic used to decide what each computation can support.
+
+The transfer result should therefore be read as portability evidence, not as a pooled global estimate. A user applying the workflow elsewhere would need a deformation-screening product, an observability or valid-support layer, an exposure layer and failure-mode checks matched to the application. The present regional hierarchy gives examples of those roles without pretending that all regions carry the same evidential weight.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.96\linewidth]{ESIN_Figure_10.pdf}
+  \caption{Regional transfer and control behavior. The left panel reports enrichment of strong-deformation cells within hidden-support cells, and the right panel reports the retained hidden-support exposure shares where population and built-up closure are available. Rhone and Rhine are shown as proxy/control cases rather than completed exposure closures.}
+  \label{fig:regionaltransfer}
+\end{figure}
+
+
+
+\subsection{External evidence ladder separated completed checks from pending benchmarks}
+
+The external evidence stack currently contains completed positive-control, boundary-control and sparse-geodetic checks as well as reproducible hooks for future high-value benchmarks (Figs.~\ref{fig:externalcontrols} and \ref{fig:validation3}). DWR/TRE--GHSL checks in Central Valley provide an official external raster contrast and exposure-scale probe. A public Cyprus EGMS run produced 17,340 valid EGMS/GHSL point overlays with a near-zero median velocity of -0.200 mm yr$^{-1}$ and very small strong-subsidence exposure shares at the -5 mm yr$^{-1}$ threshold: 65 strong points, 0.31\% of the EGMS-point-supported population and 0.34\% of the EGMS-point-supported built-up sample. This confirms that the EGMS closure code runs on real EGMS point data and also acts as a boundary control, because the same closure does not inflate exposure in a near-zero EGMS sample. It does not substitute for a strong-subsidence European EGMS benchmark, so the manuscript treats DWR/TRE, Cyprus and Po as bounded evidence for workflow behavior rather than as dense independent validation of the Chao Phraya hidden-exposure estimate.
+
+The Cyprus result is interpreted as a boundary control. The same closure logic did not inflate a strong-subsidence exposure result when the EGMS sample was dominated by near-zero velocities. Together with DWR/TRE and Po, this shows that the workflow can run outside the lead case and that its behavior is bounded. A future EGMS strong-subsidence closure for Po or Rhone would strengthen the paper, but the present manuscript does not require that unavailable file to support its main audit claim.
+
+This evidence structure keeps the paper's claim narrow but defensible. DWR/TRE shows that an external strong-subsidence raster can be translated into exposure. Cyprus shows that the EGMS code path does not automatically produce a large strong-exposure result in a near-zero tile. Po shows that a European delta transfer case has local exposure closure and sparse geodetic context. None of these is promoted to dense validation of Chao Phraya, but together they reduce the risk that the workflow is merely a single-case artifact.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.96\linewidth]{ESIN_Figure_11.pdf}
+  \caption{External positive-control and boundary-control results. The DWR/TRE--GHSL positive-control panel shows exposure retained in official strong-subsidence raster settings, whereas the Cyprus EGMS panel shows that a near-zero independent EGMS sample does not inflate strong-class exposure as the threshold becomes stricter. These controls bound workflow behavior but do not directly validate the Chao Phraya hidden-exposure estimate.}
+  \label{fig:externalcontrols}
+\end{figure}
+
+
+
+
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.92\linewidth]{ESIN_Figure_9.pdf}
+  \caption{External evidence hierarchy. Completed checks bound workflow behavior and support sign/exposure alignment; EGMS strong-subsidence closure is retained as a future hook rather than a present claim in the no-credential submission package.}
+  \label{fig:validation3}
+\end{figure}
+
+\begin{table}[t]
+\caption{Evidence ladder used to bound the ESIN claim.}
+\label{tab:validation}
+\centering
+\begin{tabular}{p{0.22\linewidth}p{0.30\linewidth}p{0.32\linewidth}}
+\toprule
+Evidence layer & Status & Claim supported \\
+\midrule
+DWR/TRE--GHSL & Completed & External deformation-exposure positive-control behavior \\
+Cyprus EGMS smoke run & Completed boundary control & Code path, EGMS/GHSL overlay feasibility and near-zero specificity \\
+Po delta non-EGMS transfer & Completed supporting check & Local exposure closure plus sparse published GNSS/InSAR context \\
+Po/Rhone EGMS hooks & Prepared; not claimed & Future European benchmark if product access becomes available \\
+Japan/Iran products & Completed as lineage tests & Portability, not lead-case truth \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+
+\subsection{Earth-science informatics implication}
+
+The central implication is that public InSAR observability should be treated as part of the information product when deformation maps are translated into exposure estimates. Product masks are often handled as preprocessing details, but they define which people, built-up surfaces or infrastructure are visible to the radar-derived screening product. The proposed audit converts that normally hidden processing decision into a traceable exposure quantity.
+
+The result also reframes how uncertainty should be communicated in public-product screening. Many uncertainty statements describe the precision of measured deformation values, the reliability of coherent scatterers or the limitations of a retrieval algorithm. Those statements are important, but they do not fully address the downstream question of exposure accounting. A product can be accurate where it observes and still incomplete for a particular exposure question. Conversely, a visible-only exposure table can be numerically precise while answering a support-conditioned question that is narrower than the decision problem. The hidden-exposure class makes this distinction explicit without requiring a new physical model.
+
+For downstream users, this distinction is practical. A city analyst, infrastructure planner or hazard-screening researcher may download a public deformation layer and combine it with population or built-up products without revisiting the full radar-processing chain. In that setting, a valid-support mask can become invisible. The audit gives that mask a stable place in the workflow and asks users to report what remains weakly observed, not only what the product already sees.
+
+This framing is compatible with Earth-science informatics because it addresses the processing, integration and interpretation of spatial Earth-system data. The workflow does not propose a new InSAR time-series processor. It adds a reproducible quality-control layer between public radar products and downstream exposure translation. The same logic can be applied whenever public deformation products are used as inputs to spatial exposure estimates.
+
+The approach may also improve communication between radar specialists and downstream users. Radar specialists often know why parts of a product are missing, but downstream users may only see the final spatial layer. Visible and hidden exposure classes create a shared vocabulary for what the product supports and what remains unresolved.
+
+\subsection{Relationship to radar and signal-processing practice}
+
+From a signal-processing perspective, the hidden-exposure class is a downstream consequence of non-uniform measurement support. InSAR observability depends on the ability of the processing chain to retain coherent or otherwise valid measurements through time. When that support is spatially structured, the product is not a uniform sample of the exposed urban surface. The audit therefore extends a familiar signal-processing concern, measurement support and missingness, into geospatial exposure estimation.
+
+This extension matters because missing support is not spatially neutral. Water bodies, vegetation, rapid surface change, construction disturbance and low-coherence surfaces are geographically structured. Urban deltas and coastal plains can combine dense built-up areas, waterways, soft soils and construction zones. Case studies from Semarang, Jakarta, Wuhan and Karapinar illustrate how subsidence settings can vary across deltaic, urban and basin contexts \citep{marfai2007semarang,hakim2020jakarta,zhang2019wuhan,orhan2021karapinar}. If weak observability is spatially correlated with exposure, a support mask can change the meaning of the exposure estimate.
+
+The workflow also clarifies the difference between measurement support and measurement value. A low or missing observability fraction does not itself indicate subsidence. It indicates that the public product offers limited support for interpreting that part of the domain. The deformation screen identifies cells that are relevant under the chosen screening product, while observability identifies how much of that domain is visible to the public radar support. Keeping these quantities separate avoids a common interpretive shortcut: treating absence from the product as absence of exposure or absence of concern.
+
+The method does not reconstruct missing phase histories, unwrap hidden deformation, estimate building-level displacement or infer causal mechanisms of subsidence. Those tasks require additional radar processing, local geodetic evidence or geotechnical diagnosis. The proposed contribution is the accounting step that prevents product non-observability from being mistaken for zero exposure.
+
+This boundary is a strength for a public-data workflow. A model that predicted deformation in every missing location would need stronger assumptions about geology, groundwater extraction, land cover, loading and spatial correlation. Such assumptions may be justified in a local study, but they are difficult to transfer across public products and regions. The conservative output used here, retained exposure under weak observability, is less physically ambitious but easier to reproduce and verify.
+
+\subsection{Use for infrastructure and power-system screening}
+
+Although the lead claim concerns population and built-up exposure, the workflow is extensible to infrastructure layers. For electrical-engineering or infrastructure-resilience applications, $E_i$ could be replaced by substations, transmission-line length, distribution corridors or other critical assets. Such use would require asset-specific interpretation because infrastructure risk depends on design, age, redundancy, foundation conditions and maintenance. The audit can identify weakly observed deformation-relevant assets, but it cannot determine whether an asset will fail. The defensible claim here is radar-derived observability bias in exposure estimation, not direct power-system risk.
+
+\subsection{Limitations}
+
+The strongest limitation is the absence of dense independent validation for the Chao Phraya hidden-exposure estimate. The exposure closure is internally robust and supported by sensitivity analyses, but it is not closed against an independent strong-subsidence product over the same lead domain. We therefore frame the article as an observability-exposure audit rather than as a site-level deformation validation study. Completed checks are used to bound workflow behavior: DWR/TRE provides an external positive-control setting, Cyprus EGMS provides a near-zero boundary control and code-path test, and Po provides a European transfer case with local exposure closure and sparse published GNSS/InSAR context. The EGMS/CLMS execution path has been prepared, but Po delta, Po-Venice and Rhone/Camargue EGMS closures are not claimed because they require credentialed CLMS product access or a manually downloaded EGMS L3 ORTHO-UP product.
+
+This limitation affects the strength of the physical interpretation but not the need for the audit. A dense independent product would help determine how much of the hidden-exposure class corresponds to confirmed deformation. Without it, hidden exposure should not be interpreted as confirmed affected population. The absence of dense validation, however, does not make visible-only accounting neutral.
+
+The second limitation is that observability is reduced to majority-observable and not-majority-observable classes for the lead accounting. This binary partition improves interpretability, but it simplifies a continuous support problem. Future implementations could retain continuous observability fractions, coherence histories or product-quality scores and report exposure as a function of support level.
+
+The third limitation concerns exposure data. GHSL products are appropriate for a reproducible public-data workflow, but they are not substitutes for local census, cadastral or infrastructure inventories. Population grids can misallocate people in rapidly changing urban areas, and built-up products can differ in how they represent informal settlement, industrial surfaces or mixed land cover. The native-pixel sensitivity reduces one allocation concern, but it does not fully propagate exposure-product uncertainty.
+
+The fourth limitation is that the workflow is designed for screening rather than causal attribution. Subsidence can reflect groundwater withdrawal, sediment compaction, loading, hydrocarbon extraction, tectonic motion or other processes. Regional studies and national-scale control efforts show that the causal and policy settings of subsidence can differ substantially across places \citep{ao2024national,fang2022subsidencecontrol}. Mechanistic attribution would require hydrogeological, geological and geotechnical evidence beyond the current data stack. The main upgrade path is therefore clear: dense independent deformation over the lead domain, continuous observability scoring and stronger local exposure layers.
+
+These limitations do not change the main informatics message. Public-product support should be retained and reported when deformation products are translated into exposure estimates. Stronger validation would improve physical interpretation, continuous support scores would refine classification, and local exposure layers would improve decision relevance. The workflow is designed so that each upgrade can be added without changing the underlying accounting logic.
+
+\section{Conclusions}
+
+We developed a reproducible geospatial workflow for auditing observability bias in InSAR-derived subsidence exposure estimates. The workflow keeps radar-product observability, deformation relevance and exposure separate until the final accounting step, allowing weakly observed deformation-relevant exposure to be reported rather than silently removed. In the Chao Phraya lead case, it retained 3.77 million people and 404.77 km$^2$ of built-up land under the area-weighted estimator, and 3.63 million people and 404.77 km$^2$ under native GHSL-pixel allocation. Robustness and failure-mode tests show that this result is not a single-threshold, single-allocation or random-mask artifact, while the external evidence ladder defines the boundary between completed workflow checks and future dense validation.
+
+The main contribution is the audit logic rather than a new displacement retrieval algorithm. Public InSAR products can be useful and still incomplete for a specific decision problem. Reporting hidden exposure makes that incompleteness visible and helps identify where alternative viewing geometries, local ground measurements, independent products or field inspection are most needed. The method should therefore be read as a screening audit: it improves transparency in exposure accounting while leaving site-level diagnosis to denser geodetic and geotechnical evidence.
+
+\backmatter
+\section*{Declarations}
+
+\paragraph{Funding.} No specific funding was reported for this study.
+
+\paragraph{Data and code availability.} All data and code supporting this manuscript are available in the GitHub repository \url{https://github.com/niubisile-wq/nature1}, the archived Zenodo release \url{https://doi.org/10.5281/zenodo.21341994} and the all-version Zenodo concept DOI \url{https://doi.org/10.5281/zenodo.21339188}. The archive includes benchmark inventories, observability masks, lead-case outputs, multi-region closure tables, model-comparison files, transfer summaries, figure source data and release metadata.
+
+\paragraph{Author contributions.} Zixuan Liu: Conceptualization, Data curation, Formal analysis, Methodology, Software, Validation, Visualization, Writing - original draft, Writing - review and editing. Wei Xiong: Conceptualization, Supervision, Methodology, Validation, Writing - review and editing.
+
+\paragraph{Competing interests.} The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\paragraph{Use of generative AI and AI-assisted technologies.} During preparation of this work, the authors used ChatGPT/Codex for editorial assistance, LaTeX formatting support, prose restructuring and consistency checking. The authors reviewed and edited the output and take full responsibility for the submitted manuscript.
+
+\paragraph{Acknowledgements.} The authors acknowledge the developers and maintainers of the public InSAR, remote-sensing and exposure datasets used in this study.
+
+\bibliography{esin_references}
+
+\end{document}

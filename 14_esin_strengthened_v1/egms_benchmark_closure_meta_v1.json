@@ -1,0 +1,31 @@
+{
+  "aoi_id": "cyprus_sourcecoop_smoke",
+  "product_label": "EGMS_L2a_087_0205_IW2_VV_2019_2023_1",
+  "input_path": "03_exposure_closure\\egms_sourcecoop_cyprus_smoke_v1\\EGMS_L2a_087_0205_IW2_VV_2019_2023_1.parquet",
+  "n_input_rows": 17340,
+  "n_valid_xy_rows": 17340,
+  "n_valid_closure_rows": 17340,
+  "longitude_column": "longitude",
+  "latitude_column": "latitude",
+  "velocity_column": "mean_velocity",
+  "temporal_coherence_column": "temporal_coherence",
+  "amplitude_dispersion_column": "amplitude_dispersion",
+  "velocity_median": -0.2,
+  "velocity_q05": -2.0,
+  "velocity_q95": 1.3,
+  "total_population_on_valid_egms_points": 679374.4282700882,
+  "total_builtup_on_valid_egms_points": 362156629.0,
+  "bbox": {
+    "lon_min": 34.06224,
+    "lon_max": 34.087662,
+    "lat_min": 34.955981,
+    "lat_max": 35.00014
+  },
+  "thresholds_mm_per_year": [
+    1.0,
+    2.0,
+    5.0,
+    10.0
+  ],
+  "claim_boundary": "This is an independent EGMS point-support exposure closure. It validates alternative-product deformation/exposure alignment, but it is not an areal missing-pixel inventory unless a gridded valid-support layer is also supplied."
+}

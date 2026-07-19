@@ -1,0 +1,4 @@
+layer,role,status,result,boundary
+DWR/TRE--GHSL,strong-subsidence positive control,completed,"Tulare/Corcoran median -95.11 mm yr$^{-1}$ 102,164 people 18.81 km$^2$ built-up",official-raster exposure probe; not Chao Phraya mask closure
+Cyprus EGMS,independent-product smoke / near-zero control,completed,"17,340 EGMS/GHSL overlays median -0.200 mm yr$^{-1}$ <= -5 mm yr$^{-1}$ pop share 0.003115",pipeline-proving smoke closure; not strong-subsidence benchmark
+A-priority EGMS,strong-subsidence independent benchmark,pending access,Po delta / Po-Venice / Rhone payloads + closure script ready for EGMS/CLMS product,decisive top-tier gate; requires authenticated product file

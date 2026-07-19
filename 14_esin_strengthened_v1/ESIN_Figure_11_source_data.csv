@@ -1,0 +1,15 @@
+panel,case,threshold_mm_per_year,strong_population,strong_builtup_km2,share_metric,share_percent
+DWR_TRE_positive_control,tulare_corcoran_agriculture,5.0,102163.557379,18.808611,,
+DWR_TRE_positive_control,fresno_urban_infrastructure,5.0,199429.414330,34.432681,,
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,1.0,92115.46859189103,53175278.0,strong_point_fraction,17.75663206459054
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,1.0,92115.46859189103,53175278.0,strong_population_share,13.5588660330427
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,1.0,92115.46859189103,53175278.0,strong_builtup_share,14.68295034301305
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,2.0,24467.983071738337,14295304.0,strong_point_fraction,5.10957324106113
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,2.0,24467.983071738337,14295304.0,strong_population_share,3.6015460773290964
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,2.0,24467.983071738337,14295304.0,strong_builtup_share,3.9472711129084423
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,5.0,2115.914900158765,1226865.0,strong_point_fraction,0.3748558246828143
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,5.0,2115.914900158765,1226865.0,strong_population_share,0.3114504773967698
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,5.0,2115.914900158765,1226865.0,strong_builtup_share,0.3387664070619566
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,10.0,0.49731961846351624,954.0,strong_point_fraction,0.011534025374855825
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,10.0,0.49731961846351624,954.0,strong_population_share,7.320258134087506e-05
+Cyprus_EGMS_boundary_control,cyprus_sourcecoop_smoke,10.0,0.49731961846351624,954.0,strong_builtup_share,0.00026342193504346985
