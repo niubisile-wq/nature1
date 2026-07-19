@@ -21,8 +21,7 @@ Key files:
 ## Release and DOI
 
 - GitHub repository: `https://github.com/niubisile-wq/openinsar-observability-bias`
-- Zenodo archived release DOI: `10.5281/zenodo.21444768`
-- Zenodo concept DOI: `10.5281/zenodo.21444768`
+- Zenodo DOI: `10.5281/zenodo.21444768`
 
 Recommended citation:
 
